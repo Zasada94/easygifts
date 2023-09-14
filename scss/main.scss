@@ -46,46 +46,98 @@ $pink: #e6007e;
 			.mainCategory {
 				display: flex;
 				cursor: pointer;
+
 				.category {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 					width: 100%;
+					position: relative;
+					color: $violet;
+					.categoryText {
+						font-size: 18px;
+						font-weight: 700;
+						position: absolute;
+						left: 70px;
+					}
+					.innerCategoryText {
+						font-size: 14px;
+						font-weight: 400;
+						position: absolute;
+						left: 70px;
+					}
+					.icon,
+					.cartIcon,
+					.apiIcon {
+						width: 25px;
+						height: 25px;
+						background-size: 100% auto;
+						position: absolute;
+						left: 30px;
+					}
+					.profileIcon {
+						background-image: url("/img/icons/profile/profile.png");
+					}
+					.paymentIcon {
+						background-image: url("/img/icons/profile/payment.png");
+					}
+					.documentsIcon {
+						background-image: url("/img/icons/profile/documents.png");
+					}
+					.offersIcon {
+						background-image: url("/img/icons/profile/offers.png");
+					}
+					.apiIcon {
+						background-image: url("/img/icons/profile/api.svg");
+					}
+					.cartIcon {
+						background-image: url("/img/icons/profile/cart.svg");
+					}
+					.left {
+						width: 10px;
+						height: 30px;
+					}
+					.right {
+						width: 10px;
+						height: 30px;
+					}
 				}
 				.radioInput:checked + .category {
 					.left,
 					.right {
 						background-color: $pink;
 					}
-					.categoryText {
+					.categoryText,
+					.innerCategoryText {
 						color: $pink;
+					}
+					.icon {
+						background-position: 0 -100%;
+					}
+					.apiIcon {
+						background-image: url("/img/icons/profile/apiChecked.svg");
+					}
+					.cartIcon {
+						background-image: url("/img/icons/profile/cartChecked.svg");
 					}
 				}
 			}
-		}
-
-		.radioInput {
-			display: none;
-		}
-
-		.icon {
-			width: 25px;
-			height: 25px;
-			background-image: url("/img/icons/profile/profile1.png");
-			background-size: 100% auto;
-		}
-
-		.icon:hover {
-			background-position: 0 -100%;
-		}
-
-		.left {
-			width: 10px;
-			height: 30px;
-		}
-		.right {
-			width: 10px;
-			height: 30px;
+			.mainCategory.big {
+				margin-top: 17px;
+			}
+			.innerCategory {
+			}
+			.radioInput {
+				display: none;
+			}
+			.logOutButton {
+				width: 200px;
+				height: 35px;
+				margin: 30px 25px;
+				border-radius: 10px;
+				background-color: white;
+				font-size: 16px;
+			}
 		}
 	}
 	.profile {

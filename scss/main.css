@@ -65,33 +65,86 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  position: relative;
+  color: #34224f;
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .categoryText {
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 70px;
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .innerCategoryText {
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 70px;
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .icon,
+.profileContainer .menuWrapper .categories .mainCategory .category .cartIcon,
+.profileContainer .menuWrapper .categories .mainCategory .category .apiIcon {
+  width: 25px;
+  height: 25px;
+  background-size: 100% auto;
+  position: absolute;
+  left: 30px;
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .profileIcon {
+  background-image: url("/img/icons/profile/profile.png");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .paymentIcon {
+  background-image: url("/img/icons/profile/payment.png");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .documentsIcon {
+  background-image: url("/img/icons/profile/documents.png");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .offersIcon {
+  background-image: url("/img/icons/profile/offers.png");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .apiIcon {
+  background-image: url("/img/icons/profile/api.svg");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .cartIcon {
+  background-image: url("/img/icons/profile/cart.svg");
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .left {
+  width: 10px;
+  height: 30px;
+}
+.profileContainer .menuWrapper .categories .mainCategory .category .right {
+  width: 10px;
+  height: 30px;
 }
 .profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .left,
 .profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .right {
   background-color: #e6007e;
 }
-.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .categoryText {
+.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .categoryText,
+.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .innerCategoryText {
   color: #e6007e;
 }
-.profileContainer .menuWrapper .radioInput {
-  display: none;
-}
-.profileContainer .menuWrapper .icon {
-  width: 25px;
-  height: 25px;
-  background-image: url("/img/icons/profile/profile1.png");
-  background-size: 100% auto;
-}
-.profileContainer .menuWrapper .icon:hover {
+.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .icon {
   background-position: 0 -100%;
 }
-.profileContainer .menuWrapper .left {
-  width: 10px;
-  height: 30px;
+.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .apiIcon {
+  background-image: url("/img/icons/profile/apiChecked.svg");
 }
-.profileContainer .menuWrapper .right {
-  width: 10px;
-  height: 30px;
+.profileContainer .menuWrapper .categories .mainCategory .radioInput:checked + .category .cartIcon {
+  background-image: url("/img/icons/profile/cartChecked.svg");
+}
+.profileContainer .menuWrapper .categories .mainCategory.big {
+  margin-top: 17px;
+}
+.profileContainer .menuWrapper .categories .radioInput {
+  display: none;
+}
+.profileContainer .menuWrapper .categories .logOutButton {
+  width: 200px;
+  height: 35px;
+  margin: 30px 25px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
 }
 @media (max-width: 768px) {
   .profileContainer {
