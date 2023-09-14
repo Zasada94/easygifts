@@ -10,7 +10,7 @@ $red: #fd0000;
 	font-family: "Roboto";
 	display: flex;
 	max-width: 1140px;
-	margin: 20px auto 0 auto;
+	margin: 20px auto 90px auto;
 
 	p,
 	h2,
@@ -25,7 +25,7 @@ $red: #fd0000;
 		background-color: #f7f7f7;
 		border: 1px solid #dfdfdf;
 		border-radius: 10px;
-
+		align-self: flex-start;
 		.menuTitleWrapper {
 			background-color: $violet;
 			color: white;
@@ -268,6 +268,66 @@ $red: #fd0000;
 					width: 97%;
 					height: 16px;
 					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+		.profileBottom {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			color: $violet;
+			.item {
+				width: 420px;
+				height: 281px;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				margin-top: 23px;
+				position: relative;
+				.title {
+					display: flex;
+					align-items: center;
+					height: 65px;
+					border-radius: 10px 10px 0px 0px;
+					border: 1px solid #dfdfdf;
+					background: #e3e3e3;
+					padding-left: 40px;
+					.titleText {
+						margin-left: 10px;
+						font-size: 18px;
+						font-weight: 800;
+					}
+				}
+				.bar {
+					height: 81px;
+					display: flex;
+					align-items: center;
+					background: linear-gradient(
+						90deg,
+						#d09266 0.03%,
+						#efbc87 26.06%,
+						#d09266 48.43%,
+						#f6d7b9 72.37%,
+						#d09266 96.31%
+					);
+					.barText {
+						font-size: 22px;
+						font-style: italic;
+						font-weight: 400;
+						margin-left: 48px;
+						color: white;
+					}
+				}
+				.trophyWrapper {
+					position: absolute;
+					left: 50%;
+					top: 77px;
+					transform: translate(-50%, 0);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					svg {
+						margin: 0 3.5px;
+					}
 				}
 			}
 		}
