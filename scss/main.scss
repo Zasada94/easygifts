@@ -1,5 +1,7 @@
 $violet: #34224f;
 $pink: #e6007e;
+$lightGrey: #eaeaea;
+$green: #54bf00;
 
 .profileContainer {
 	font-family: "Roboto";
@@ -163,6 +165,45 @@ $pink: #e6007e;
 			.welcomeImage {
 				border-bottom-right-radius: 10px;
 				border-top-right-radius: 10px;
+			}
+		}
+		.creditLine {
+			width: 100%;
+
+			color: $violet;
+			margin-top: 25px;
+			display: flex;
+			flex-direction: column;
+			border: 1px solid #dfdfdf;
+			border-radius: 10px;
+			background: #f7f7f7;
+			.top {
+				display: flex;
+				align-items: center;
+				background-color: $green;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				height: 65px;
+				.wallet {
+					width: 20px;
+					height: 20px;
+					margin: 0 10px 6px 40px;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+					text-transform: uppercase;
+					span {
+						font-weight: 800;
+					}
+					.value {
+						color: white;
+						margin-left: 10px;
+					}
+				}
+			}
+			.bottom {
+				height: 20px;
 			}
 		}
 	}
