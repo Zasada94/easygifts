@@ -2,6 +2,9 @@ $violet: #34224f;
 $pink: #e6007e;
 $lightGrey: #eaeaea;
 $green: #54bf00;
+$darkGrey: #8c8c8c;
+$orange: #fd4c00;
+$red: #fd0000;
 
 .profileContainer {
 	font-family: "Roboto";
@@ -203,7 +206,69 @@ $green: #54bf00;
 				}
 			}
 			.bottom {
-				height: 20px;
+				display: flex;
+				align-items: center;
+				.termCost,
+				.allCost,
+				.available {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 20px;
+					margin-top: 10px;
+					font-size: 14px;
+					font-weight: 400;
+					.line {
+						height: 1px;
+						width: 100px;
+
+						background-color: black;
+					}
+				}
+				.termCost {
+					margin-left: 40px;
+					.value {
+						color: $orange;
+						font-size: 17px;
+						font-weight: 700;
+					}
+				}
+				.allCost {
+					.value {
+						color: $red;
+						font-size: 17px;
+						font-weight: 700;
+					}
+				}
+				.available {
+					.value {
+						color: $green;
+						font-size: 17px;
+						font-weight: 700;
+					}
+				}
+				.zipper {
+					display: flex;
+					align-items: center;
+					width: 360px;
+					padding: 0 2px;
+					margin: 10px 40px 0 40px;
+					height: 20px;
+					border-radius: 5px;
+					border: 0.5px solid #8c8c8c;
+					background: #fff;
+				}
+				.red {
+					background-color: $orange;
+					height: 16px;
+					width: 3%;
+					border-radius: 5px 0px 0px 5px;
+				}
+				.green {
+					background-color: $green;
+					width: 97%;
+					height: 16px;
+					border-radius: 0 5px 5px 0;
+				}
 			}
 		}
 	}

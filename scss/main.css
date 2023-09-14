@@ -220,7 +220,79 @@
   margin-left: 10px;
 }
 .profileContainer .profilePanel .creditLine .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profileContainer .profilePanel .creditLine .bottom .termCost,
+.profileContainer .profilePanel .creditLine .bottom .allCost,
+.profileContainer .profilePanel .creditLine .bottom .available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.profileContainer .profilePanel .creditLine .bottom .termCost .line,
+.profileContainer .profilePanel .creditLine .bottom .allCost .line,
+.profileContainer .profilePanel .creditLine .bottom .available .line {
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+.profileContainer .profilePanel .creditLine .bottom .termCost {
+  margin-left: 40px;
+}
+.profileContainer .profilePanel .creditLine .bottom .termCost .value {
+  color: #fd4c00;
+  font-size: 17px;
+  font-weight: 700;
+}
+.profileContainer .profilePanel .creditLine .bottom .allCost .value {
+  color: #fd0000;
+  font-size: 17px;
+  font-weight: 700;
+}
+.profileContainer .profilePanel .creditLine .bottom .available .value {
+  color: #54bf00;
+  font-size: 17px;
+  font-weight: 700;
+}
+.profileContainer .profilePanel .creditLine .bottom .zipper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  padding: 0 2px;
+  margin: 10px 40px 0 40px;
   height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid #8c8c8c;
+  background: #fff;
+}
+.profileContainer .profilePanel .creditLine .bottom .red {
+  background-color: #fd4c00;
+  height: 16px;
+  width: 3%;
+  border-radius: 5px 0px 0px 5px;
+}
+.profileContainer .profilePanel .creditLine .bottom .green {
+  background-color: #54bf00;
+  width: 97%;
+  height: 16px;
+  border-radius: 0 5px 5px 0;
 }
 
 @media (max-width: 768px) {
