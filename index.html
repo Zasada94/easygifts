@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Profil - Gadżety reklamowe - PCM Sp. z o.o. EASY GIFTS Sp.k.</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,latin-ext"
+        rel="stylesheet">
     <link href="/css/easygifts.css?v=1694599303" rel="stylesheet">
     <link href="/css/menu.css?v=1688889211" rel="stylesheet">
     <link href="/css/profile.css?v=1645177719" rel="stylesheet">
     <link href="/css/extras.css?v=1690473256" rel="stylesheet">
+    <link href="/scss/main.css" rel="stylesheet">
 
 
 
@@ -460,233 +463,35 @@
             </div>
         </div>
     </nav>
-    <main class="profile">
-
-        <section class="content">
-            <div class="container">
-
-                <div class="col-lg-3 col-xs-12 mt--3"></div>
-                <div class="col-lg-9 col-xs-12 mt--3">
-                    <h2 class="main main-new" style="margin: 10px 0;">
-                        Witaj w panelu klienta<br>
-                        <strong>Świecie pełnym wyjątkowych gadżetów</strong>
-                    </h2>
-                </div>
-
-                <div class="custom-tabs">
-
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div role="alert" class="alert alert-success">Pomyślnie się zalogowałeś.</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3 col-xs-12 mt--3">
-                            <ul class="nav navi-profile" role="tablist">
-                                <li class="lev1 yourdata">
-                                    <a class="lev1a profile" href="/profile.php">Profil</a>
-                                </li>
-                                <li class="lev1 yourdata active">
-                                    <a class="lev1a twoje-dane" href="javascript:void('profile');">Twoje dane</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=settings">Ustawienia</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=supervisor">Opiekun handlowy</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=discount">Aktualny rabat</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=development">Program Rozwoju</a>
-                                        </li>
-                                        <li><a class="close" data-target="yourdata"></a></li>
-                                    </ul>
-                                </li>
-                                <li class="lev1">
-                                    <a class="lev1a zamowienia" href="javascript:void('orders');">Zamówienia</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=orders">Historia zamówień</a>
-                                        </li>
-                                        <li><a class="close" data-target="zamowienia"></a></li>
-                                    </ul>
-                                </li>
-                                <li class="lev1 docs">
-                                    <a class="lev1a docs" href="javascript:void('docs');">Dokumenty</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=waybills">Listy przewozowe</a>
-                                        </li>
-                                        <li><a class="close" data-target="docs"></a></li>
-                                    </ul>
-                                </li>
-                                <li class="lev1 offers">
-                                    <a class="lev1a oferty" href="javascript:void('offers');">Oferty</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=offers">Oferty</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=calculations.php">Kalkulacje</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=negotiations.php">Negocjacje</a>
-                                        </li>
-                                        <li><a class="close" data-target="offers"></a></li>
-                                    </ul>
-                                </li>
-                                <li class="lev1 tools">
-                                    <a class="lev1a narzedzia" href="javascript:void('etools');">Narzędzia</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=ownshop">Własny sklep online</a>
-                                        </li>
-
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=etools&tool=nonamecatalog">Katalog NO-NAME</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=webapi">WEBAPI</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=negotiator">Negocjator</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=pricelist">Cenniki</a>
-                                        </li>
-                                        <li><a class="close" data-target="tools"></a></li>
-                                    </ul>
-                                </li>
-                                <li class="lev1 todowload">
-                                    <a class="lev1a downloads" href="javascript:void('downloads');">Do pobrania</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=downloads&catid=2">Katalogi Easy Gifts</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=downloads&catid=4">Video</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=downloads&catid=5">Newslettery</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=downloads&catid=6">Ulotki, broszury</a>
-                                        </li>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=downloads&catid=7">Landing Pages</a>
-                                        </li>
-                                        <li><a class="close" data-target="todownload"></a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="lev1 adddiscounts">
-                                    <a class="lev1a rabaty" href="javascript:void('discounts');">Dodatkowe rabaty</a>
-                                    <ul>
-                                        <li class="lev2">
-                                            <a href="https://www.easygifts.com.pl/profile.php?action=discounts-add&item=codes">Kody rabatowe</a>
-                                        </li>
-                                        <li><a class="close" data-target="adddiscounts"></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="profile-subcontent col-lg-9 col-xs-12 mt--3">
-
-                            <div class="pkafle row">
-                                <div class="col-lg-6 col-xs-12">
-                                    <a class="kfl kfl1" href="/profile.php?action=discount">
-                            <div class="kfl1-fiolet"></div>
-                            <div class="kfl1-w1"></div>
-                            <div class="kfl1-w2"></div>
-                            <div class="v">                                                            
-                                <h6>
-                                    Twój aktualny rabat<br><br>
-                                    <strong>48%</strong>
-                                </h6>
-                            </div>
-                            <div class="h">
-                                 
-                                                                    
-                                    <img class="cup" src="/img/icons/profile/client-platinium-pl.jpg" />                                                
-                                                            </div>
-                        </a>
-                                </div>
-                                <div class="col-lg-6 col-xs-12">
-                                    <a class="kfl kfl2" href="/profile.php?action=discount">
-                                <div class="kfl2-fiolet"></div>
-                                <div class="kfl2-w1"></div>
-                                <div class="kfl2-w2"></div>                                
-                                <div class="v">
-                                    <h6>
-                                        Twój opiekun handlowy<br><br>
-                                        <strong>Maja Zawadzka</strong>
-                                    </h6>
-                                </div>
-                                <div class="h">
-                                    <figure>
-                                                                            <img class="staff img-responsive" src="/data/staff/13/maja-zawadzka.jpg" alt="Maja Zawadzka">
-                                                                    </figure>                                
-                                </div>
-                            </a>
-                                </div>
-                                <div class="col-lg-6 col-xs-12">
-                                    <a class="kfl kfl3" href="">
-                        <div class="kfl3-fiolet"></div>
-                        <div class="kfl3-w1"></div>
-                        <div class="kfl3-w2"></div>                        
-                        <div class="v">
-                            <h6>
-                                Twój aktualny<br><br>
-                                <strong>Status</strong>
-                            </h6>
-                        </div>
-                        <div class="h">
-                            <h6 class="status">
-                                                                <br><span style="font-size: 0.75em; line-height: 1.25em;">* Dowiedz się więcej u swojego opiekuna handlowego.</span>
-                            </h6>
-                        </div>
-                    </a>
-                                </div>
-                                <div class="your-guardian col-lg-6 col-xs-12">
-                                    <div class="kfl kfl4">
-                                        <div class="kfl4-fiolet"></div>
-                                        <div class="kfl4-w1"></div>
-                                        <div class="kfl4-w2"></div>
-                                        <div class="v">
-                                            <h6 style="font-size: 1.5em;">
-                                                Napisz do swojego<br><br>
-                                                <strong>opiekuna handlowego</strong>
-                                            </h6>
-                                        </div>
-                                        <div class="h">
-                                            <ul>
-                                                <li class="name">Maja Zawadzka</li>
-                                                <li class="type">Kierownik Biura Obsługi Klienta</li>
-                                                <li><br></li>
-                                                <li>Tel: +48 71 330 51 11</li>
-                                                <li>Mob: +48 880 349 176</li>
-                                            </ul>
-                                            <br>
-                                            <a class="btn btn-primary" href="mailto:m.zawadzka@easygifts.pl">Skontaktuj się z nami</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+    <main class="profileContainer">
+        <section class="menuWrapper">
+            <div class="menuTitleWrapper">
+                <div class="menuTitle">MENU</div>
             </div>
-
+            <div class="categories">
+                <label class="mainCategory">
+                    <input type="radio" name="cat" class="radioInput" checked="checked" />
+                    <div class="category">
+                        <div class="left"></div>
+                        <div class="icon"></div>
+                        <p class="categoryText">Profil</p>
+                        <div class="right"></div>
+                    </div>
+                </label>
+                <label class="mainCategory">
+                    <input type="radio" name="cat" class="radioInput" />
+                    <div class="category">
+                        <div class="left"></div>
+                        <div class="icon"></div>
+                        <p class="categoryText">Profil</p>
+                        <div class="right"></div>
+                    </div>
+                </label>
+            </div>
         </section>
-
+        <section class="profile">
+            Witaj w panelu klienta
+        </section>
     </main>
     <footer>
         <div class="footer-outline">
@@ -918,6 +723,7 @@
     <script src="/js/easygifts_libraries.min.js"></script>
     <script src="/js/easygifts_scripts.js"></script>
     <script src="/js/bootbox.min.js"></script>
+    <script src="/js/main.js"></script>
 
     </div>
 </body>
