@@ -9,7 +9,8 @@
 .profileContainer p,
 .profileContainer h2,
 .profileContainer h1,
-.profileContainer h3 {
+.profileContainer h3,
+.profileContainer button {
   margin: 0;
   padding: 0;
 }
@@ -471,6 +472,165 @@
   margin: 15px 0 0 40px;
   font-size: 16px;
   font-weight: 400;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  max-height: 54px;
+  border-top: 1px solid #eaeaea;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv .text {
+  width: 195px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv .value {
+  color: #54bf00;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv .value span {
+  font-size: 14px;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv .guarantee {
+  width: 195px;
+  line-height: 100%;
+  margin-right: 15px;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .adv .guarantee span {
+  font-size: 8px;
+  line-height: 100%;
+  color: #8c8c8c;
+}
+.profileContainer .profilePanel .profileBottom .item .advWrapper .plus {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  border-bottom: 1px solid #eaeaea;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .text {
+  width: 195px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value1 {
+  color: #e6007e;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value1 span {
+  font-size: 14px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value2 {
+  color: #fd0000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value2 span {
+  font-size: 14px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value3 {
+  color: #54bf00;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value3 span {
+  font-size: 14px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value4 {
+  color: #fd4c00;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value4 span {
+  font-size: 14px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .textPlus {
+  font-size: 12px;
+  margin: 15px 0;
+  padding-right: 50px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .textPlus span {
+  font-weight: 600;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .plus {
+  border-top: 1px solid #eaeaea;
+  border-bottom: none;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem:nth-child(1) {
+  padding-top: 20px;
+}
+.profileContainer .profilePanel .profileBottom .item .limitWrapper .double {
+  border: none;
+}
+.profileContainer .profilePanel .profileBottom .advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.profileContainer .profilePanel .profileBottom .limit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 768px) {
