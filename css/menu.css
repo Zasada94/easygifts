@@ -1,0 +1,354 @@
+div.fixed-left-menu {
+    position: fixed;
+    z-index: 1001;
+    left: -300px;
+    top: 111px;
+    background: #fff;
+    opacity: 0.98;
+    border: 1px solid #ebebeb;
+    padding-bottom: 35px;
+    width: 300px;
+}
+div.fixed-left-menu a.close {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    padding: 10px 15px 10px 12px;
+    background: none;
+    color: #000;
+    font-size: 0;
+    border: 1px solid #ccc;
+    opacity: 0.9;
+    content: url(../img/global/arrow_dropdow_left_pink.png);
+    display: block;
+}
+div.fixed-left-menu ul {
+    float: left;
+    list-style: none;
+    padding: 0 0 45px 0;
+}
+div.fixed-left-menu ul li {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+div.fixed-left-menu ul li a {
+    float: left;
+    width: 100%;
+}
+div.fixed-left-menu > ul > li > a {
+    padding: 10px 25px;
+}
+div.fixed-left-menu > ul > li > a.sm {
+    padding: 5px 25px;
+}
+div.fixed-left-menu > ul > li:first-child > a {
+    padding: 0 25px 10px 25px;
+}
+div.fixed-left-menu > ul > li > a.sm.enhanced {
+    margin-bottom: 10px;
+}
+
+div.fixed-left-menu > ul > li:first-child > a {
+    margin-top: 20px !important;
+}
+
+div.fixed-left-menu ul li a.active,
+div.fixed-left-menu ul li a:focus,
+div.fixed-left-menu ul li a:hover {
+    color: #e20079;
+    text-decoration: none;
+}
+div.fixed-left-menu ul li a.enhanced {
+    font-weight: 400;
+    font-size: 1.25em;
+}
+div.fixed-left-menu li ul.flm-subcats {
+    position: absolute;
+    border: 1px solid #ebebeb;
+    border-top: none;
+    top: 1px;
+    left: 100%;
+    width: auto;
+    height: 100%;
+    display: none;
+    background: #fff;
+    padding: 25px 35px 35px 35px;
+    z-index: 1000;
+}
+div.fixed-left-menu li ul.flm-subcats.flm-subcats-wide-2 {
+    width: 600px;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+div.fixed-left-menu li ul.flm-subcats.flm-subcats-wide-3 {
+    width: 900px;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+div.fixed-left-menu li ul.flm-subcats.flm-subcats-wide-4 {
+    width: 1200px;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+div.fixed-left-menu li ul.flm-subcats.flm-subcats-wide-2 li {
+    margin: 0 0 25px 0;
+}
+div.fixed-left-menu li ul.flm-subcats.flm-subcats-wide-4 li {
+    margin: 0 0 15px 0;
+}
+
+div.fixed-left-menu li.first-lev-mo:hover ul.flm-subcats {
+    display: block;
+}
+div.fixed-left-menu li ul.flm-subcats li {
+    float: left;
+    width: 240px;
+    padding: 0;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+}
+div.fixed-left-menu li ul.flm-subcats li a {
+    padding: 6px 0;
+}
+
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu {
+    padding-left: 60px;
+    height: 35px;
+    background-size: 40px 80px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 0 10px 0;
+}
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu:hover {
+    background-position: 0 -40px;
+}
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu.fl-menu-brand {
+    height: 50px;
+    background-size: 100px 100px;
+    background-position: 50% 0;
+    padding: 10px 0 0 120px;
+    margin: 0;
+}
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu.fl-menu-brand:hover {
+    background-position: 50% -50px;
+}
+
+div.fixed-left-menu li.nowosci-big {
+    padding: 10px 0;
+}
+div.fixed-left-menu li a.nowosci-big {
+    float: left;
+    height: 30px;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin: 0 0 0 25px;
+    background-size: 30px 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/fl-menu/nowosci-big.png");
+}
+div.fixed-left-menu li a.nowosci-big:hover {
+    background-position: 0 -30px;
+}
+
+div.fixed-left-menu > ul > li > a.big-discount {
+	text-transform: uppercase;
+}
+
+div.fixed-left-menu a.lft-pad,
+div.fixed-left-menu > ul > li > a.ctg-katalogi-easy-gifts,
+div.fixed-left-menu > ul > li > a.ctg-video,
+div.fixed-left-menu > ul > li > a.ctg-newslettery,
+div.fixed-left-menu > ul > li > a.ctg-ulotki-broszury,
+div.fixed-left-menu > ul > li > a.ctg-landing-pages,
+div.fixed-left-menu > ul > li > a.ctg-power-of-brands,
+div.fixed-left-menu > ul > li > a.webapi,
+div.fixed-left-menu > ul > li > a.negocjator,
+div.fixed-left-menu > ul > li > a.do-pobrania,
+div.fixed-left-menu > ul > li > a.zamow-katalogi,
+div.fixed-left-menu > ul > li > a.newsletter,
+div.fixed-left-menu > ul > li > a.warunki-wspolpracy,
+div.fixed-left-menu > ul > li > a.polityka-prywatnosci,
+div.fixed-left-menu > ul > li > a.zakupy-na-raty,
+div.fixed-left-menu > ul > li > a.dane-teleadresowe,
+div.fixed-left-menu > ul > li > a.formularz-kontaktowy,
+div.fixed-left-menu > ul > li > a.kontakt-do-dzialow,
+div.fixed-left-menu > ul > li > a.marketing-import-ksiegowosc,
+div.fixed-left-menu > ul > li > a.drukarnia-i-magazyn,
+div.fixed-left-menu > ul > li > a.faq,
+div.fixed-left-menu > ul > li > a.o-nas,
+div.fixed-left-menu > ul > li > a.big-discount,
+div.fixed-left-menu > ul > li > a.usb-config
+   {
+    float: left;
+    padding-left: 40px !important;
+    padding-top: 5px;
+    height: 30px;
+    margin: 10px 0 0 25px;
+    background-size: 30px 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+div.fixed-left-menu > ul > li > a.ctg-katalogi-easy-gifts:hover,
+div.fixed-left-menu > ul > li > a.ctg-video:hover
+div.fixed-left-menu > ul > li > a.ctg-newslettery:hover
+div.fixed-left-menu > ul > li > a.ctg-ulotki-broszury:hover
+div.fixed-left-menu > ul > li > a.ctg-landing-pages:hover
+div.fixed-left-menu > ul > li > a.ctg-power-of-brands:hover,
+div.fixed-left-menu > ul > li > a.webapi:hover,
+div.fixed-left-menu > ul > li > a.do-pobrania:hover,
+div.fixed-left-menu > ul > li > a.zamow-katalogi:hover,
+div.fixed-left-menu > ul > li > a.newsletter:hover,
+div.fixed-left-menu > ul > li > a.warunki-wspolpracy:hover,
+div.fixed-left-menu > ul > li > a.polityka-prywatnosci:hover,
+div.fixed-left-menu > ul > li > a.zakupy-na-raty:hover,
+div.fixed-left-menu > ul > li > a.dane-teleadresowe:hover,
+div.fixed-left-menu > ul > li > a.formularz-kontaktowy:hover,
+div.fixed-left-menu > ul > li > a.kontakt-do-dzialow:hover,
+div.fixed-left-menu > ul > li > a.marketing-import-ksiegowosc:hover,
+div.fixed-left-menu > ul > li > a.drukarnia-i-magazyn:hover,
+div.fixed-left-menu > ul > li > a.faq:hover,
+div.fixed-left-menu > ul > li > a.big-discount:hover,
+div.fixed-left-menu > ul > li > a.usb-config:hover,
+div.fixed-left-menu > ul > li > a.o-nas:hover {
+    background-position: 0 -30px;
+}
+div.fixed-left-menu > ul > li > a.ctg-katalogi-easy-gifts                 { background-image: url("../img/icons/fl-menu/catalogs/katalogi-easy-gifts.png"); }
+div.fixed-left-menu > ul > li > a.ctg-power-of-brands                     { background-image: url("../img/icons/fl-menu/catalogs/power-of-brands.png"); }
+div.fixed-left-menu > ul > li > a.ctg-video                               { background-image: url("../img/icons/fl-menu/catalogs/video.png"); }
+div.fixed-left-menu > ul > li > a.usb-config							  { background-image: url("../img/icons/usb-config.png"); }
+div.fixed-left-menu > ul > li > a.big-discount							  { background-image: url("../img/icons/big-discount.png"); }
+div.fixed-left-menu > ul > li > a.ctg-newslettery                         { background-image: url("../img/icons/fl-menu/catalogs/newslettery.png"); }
+div.fixed-left-menu > ul > li > a.ctg-ulotki-broszury                     { background-image: url("../img/icons/fl-menu/catalogs/ulotki-broszury.png"); }
+div.fixed-left-menu > ul > li > a.ctg-landing-pages                       { background-image: url("../img/icons/fl-menu/catalogs/landing-pages.png"); }
+
+div.fixed-left-menu > ul > li > a.negocjator                              { background-image: url("../img/icons/fl-menu/agency/negocjator.png"); }
+div.fixed-left-menu > ul > li > a.webapi                                  { background-image: url("../img/icons/fl-menu/agency/webapi.png"); }
+div.fixed-left-menu > ul > li > a.do-pobrania                             { background-image: url("../img/icons/fl-menu/agency/do-pobrania.png"); }
+div.fixed-left-menu > ul > li > a.zamow-katalogi                          { background-image: url("../img/icons/fl-menu/agency/zamow-katalogi.png"); }
+div.fixed-left-menu > ul > li > a.newsletter                              { background-image: url("../img/icons/fl-menu/agency/newsletter.png"); }
+div.fixed-left-menu > ul > li > a.warunki-wspolpracy                      { background-image: url("../img/icons/fl-menu/agency/warunki-wspolpracy.png"); }
+div.fixed-left-menu > ul > li > a.polityka-prywatnosci                    { background-image: url("../img/icons/fl-menu/agency/polityka-prywatnosci.png"); }
+div.fixed-left-menu > ul > li > a.zakupy-na-raty                          { background-image: url("../img/icons/fl-menu/agency/zakupy-na-raty.png"); }
+
+div.fixed-left-menu > ul > li > a.dane-teleadresowe                       { background-image: url("../img/icons/fl-menu/contact/dane-teleadresowe.png"); }
+div.fixed-left-menu > ul > li > a.formularz-kontaktowy                    { background-image: url("../img/icons/fl-menu/contact/formularz-kontaktowy.png"); }
+div.fixed-left-menu > ul > li > a.kontakt-do-dzialow                      { background-image: url("../img/icons/fl-menu/contact/dzial-handlowy.png"); }
+div.fixed-left-menu > ul > li > a.marketing-import-ksiegowosc             { background-image: url("../img/icons/fl-menu/contact/marketing-import-ksiegowosc.png"); }
+div.fixed-left-menu > ul > li > a.drukarnia-i-magazyn                       { background-image: url("../img/icons/fl-menu/contact/drukarnia-magazyn.png"); }
+div.fixed-left-menu > ul > li > a.faq                                     { background-image: url("../img/icons/fl-menu/contact/faq.png"); }
+div.fixed-left-menu > ul > li > a.o-nas                                   { background-image: url("../img/icons/fl-menu/contact/o-nas.png"); }
+
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-silicon-power      { background-image: url("../img/icons/fl-menu/silicon-power.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-jbl                { background-image: url("../img/icons/fl-menu/jbl.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-acme               { background-image: url("../img/icons/fl-menu/acme.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-aladdin            { background-image: url("../img/icons/fl-menu/aladdin.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-denver             { background-image: url("../img/icons/fl-menu/denver.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-stanley            { background-image: url("../img/icons/fl-menu/stanley.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-schwarzwolf        { background-image: url("../img/icons/fl-menu/schwarzwolf.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-victorinox         { background-image: url("../img/icons/fl-menu/victorinox.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-wenger             { background-image: url("../img/icons/fl-menu/wenger.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-pierre-cardin      { background-image: url("../img/icons/fl-menu/pierre-cardin.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-vanilla-season     { background-image: url("../img/icons/fl-menu/vanilla-season.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-gildan             { background-image: url("../img/icons/fl-menu/gildan.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-xiaomi             { background-image: url("../img/icons/fl-menu/xiaomi.png"); }
+
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-festina            { background-image: url("../img/icons/fl-menu/festina.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-hugo-boss          { background-image: url("../img/icons/fl-menu/hugo-boss.png?v=2022"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-cacharel           { background-image: url("../img/icons/fl-menu/cacharel.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-cerruti-1881       { background-image: url("../img/icons/fl-menu/cerruti-1881.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-nina-ricci         { background-image: url("../img/icons/fl-menu/nina-ricci.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-christian-lacroix  { background-image: url("../img/icons/fl-menu/christian-lacroix.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-ungaro             { background-image: url("../img/icons/fl-menu/ungaro.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-ice-watch          { background-image: url("../img/icons/fl-menu/ice-watch.png"); }
+
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-dlugopisy-i-artykuly-pismienne   { background-image: url("../img/icons/fl-menu/dlugopisy-i-artykuly-pismienne.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-breloki-i-smycze                 { background-image: url("../img/icons/fl-menu/breloki-i-smycze.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-biurowe                          { background-image: url("../img/icons/fl-menu/biurowe.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-elektronika                      { background-image: url("../img/icons/fl-menu/elektronika.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-do-picia                         { background-image: url("../img/icons/fl-menu/do-picia.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-kuchenne-i-barowe                { background-image: url("../img/icons/fl-menu/kuchenne-i-barowe.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-torby-bawelniane-i-plecaki       { background-image: url("../img/icons/fl-menu/torby-i-plecaki.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-podrozne                         { background-image: url("../img/icons/fl-menu/podrozne.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-na-deszcz                        { background-image: url("../img/icons/fl-menu/na-deszcz.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-narzedzia                        { background-image: url("../img/icons/fl-menu/narzedzia.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-sport-i-czas-wolny               { background-image: url("../img/icons/fl-menu/sport-i-czas-wolny.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-tekstylia                        { background-image: url("../img/icons/fl-menu/tekstylia.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-opakowania-i-etui                { background-image: url("../img/icons/fl-menu/opakowania-i-etui.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-do-sublimacji                    { background-image: url("../img/icons/fl-menu/do-sublimacji.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-ekologiczne                      { background-image: url("../img/icons/fl-menu/ekologiczne.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-dla-dzieci                       { background-image: url("../img/icons/fl-menu/dla-dzieci.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-bluetooth                        { background-image: url("../img/icons/fl-menu/bluetooth.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-higiena-i-dezynfekcja            { background-image: url("../img/icons/fl-menu/higiena-i-dezynfekcja.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-odblaskowe                       { background-image: url("../img/icons/fl-menu/odblaskowe.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-all-for-pets                     { background-image: url("../img/icons/fl-menu/all-for-pets.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-xmas                             { background-image: url("../img/icons/fl-menu/xmas.png"); }
+div.fixed-left-menu li ul.flm-subcats li a.fl-menu-nowosci                          { background-image: url("../img/icons/fl-menu/nowosci.png"); }
+
+div.fixed-left-menu > ul > li > a.flm-marking {
+    float: left;
+    padding: 0 0 0 45px;
+    height: 30px;
+    background-size: 30px 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 10px 0 0 25px;
+}
+div.fixed-left-menu > ul > li > a.flm-marking:hover {
+    background-position: 0 -30px;
+}
+
+section.tools div.box a {
+    float: left;
+    padding: 5px 0 0 35px;
+    height: 30px;
+    background-size: 30px 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+section.tools div.box a.footer-marking-terminy-znakowan,
+div.fixed-left-menu > ul > li > a.terminy-znakowan  { background-image: url("../img/icons/fl-menu/marking/marking-dates.png"); }
+
+section.tools div.box a.footer-marking-tampodruk,
+div.fixed-left-menu > ul > li > a.tampodruk         { background-image: url("../img/icons/fl-menu/marking/tampodruk.png"); }
+
+section.tools div.box a.footer-marking-sitodruk,
+div.fixed-left-menu > ul > li > a.sitodruk          { background-image: url("../img/icons/fl-menu/marking/sitodruk.png"); }
+
+section.tools div.box a.footer-marking-grawerowanie,
+div.fixed-left-menu > ul > li > a.grawerowanie      { background-image: url("../img/icons/fl-menu/marking/grawerowanie.png"); }
+
+section.tools div.box a.footer-marking-termotransfer,
+div.fixed-left-menu > ul > li > a.termotransfer     { background-image: url("../img/icons/fl-menu/marking/termotransfer.png"); }
+
+section.tools div.box a.footer-marking-druk-uv,
+div.fixed-left-menu > ul > li > a.druk-uv           { background-image: url("../img/icons/fl-menu/marking/druk-uv.png"); }
+
+section.tools div.box a.footer-marking-dtg,
+div.fixed-left-menu > ul > li > a.dtg               { background-image: url("../img/icons/fl-menu/marking/dtg.png"); }
+
+section.tools div.box a.footer-marking-dtf,
+div.fixed-left-menu > ul > li > a.dtf               { background-image: url("../img/icons/fl-menu/marking/dtf.png"); }
+
+section.tools div.box a.footer-marking-sublimacja,
+div.fixed-left-menu > ul > li > a.sublimacja        { background-image: url("../img/icons/fl-menu/marking/sublimacja.png"); }
+
+section.tools div.box a.footer-marking-tloczenie,
+div.fixed-left-menu > ul > li > a.tloczenie         { background-image: url("../img/icons/fl-menu/marking/tloczenie.png"); }
+
+section.tools div.box a.footer-marking-doming,
+div.fixed-left-menu > ul > li > a.doming            { background-image: url("../img/icons/fl-menu/marking/doming.png"); }
+
+section.tools div.box a.footer-marking-haft-komputerowy,
+div.fixed-left-menu > ul > li > a.haft-komputerowy  { background-image: url("../img/icons/fl-menu/marking/haft-komputerowy.png"); }
+
+section.tools div.box a.footer-marking-kalka-ceramiczna,
+div.fixed-left-menu > ul > li > a.kalka-ceramiczna  { background-image: url("../img/icons/fl-menu/marking/kalka-ceramiczna.png"); }
+
+section.tools div.box a.footer-marking-etykiety-naklejki,
+div.fixed-left-menu > ul > li > a.etykiety-naklejki { background-image: url("../img/icons/fl-menu/marking/etykiety-naklejki.png"); }
