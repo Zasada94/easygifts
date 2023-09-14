@@ -5,7 +5,7 @@ $pink: #e6007e;
 	font-family: "Roboto";
 	display: flex;
 	max-width: 1140px;
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
 
 	p,
 	h2,
@@ -17,7 +17,6 @@ $pink: #e6007e;
 
 	.menuWrapper {
 		width: 250px;
-
 		background-color: #f7f7f7;
 		border: 1px solid #dfdfdf;
 		border-radius: 10px;
@@ -140,7 +139,32 @@ $pink: #e6007e;
 			}
 		}
 	}
-	.profile {
+
+	.profilePanel {
+		width: 100%;
+		margin-left: 30px;
+		.welcome {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			border-radius: 10px;
+			background: var(
+				--gradient-gowny-kolor,
+				linear-gradient(90deg, #34224f 0%, #ea167f 100%)
+			);
+			.welcomeText {
+				color: white;
+				font-size: 36px;
+				font-weight: 500;
+				line-height: 160%;
+				margin-left: 40px;
+			}
+			.welcomeImage {
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+		}
 	}
 }
 
