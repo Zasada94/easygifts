@@ -298,7 +298,7 @@ $red: #fd0000;
 					}
 				}
 				.bar {
-					height: 81px;
+					height: 80px;
 					display: flex;
 					align-items: center;
 					background: linear-gradient(
@@ -328,6 +328,84 @@ $red: #fd0000;
 					svg {
 						margin: 0 3.5px;
 					}
+				}
+				.barDisc {
+					height: 80px;
+					display: flex;
+					align-items: center;
+					background: linear-gradient(90deg, #34224f 0%, #ea167f 100%);
+					.barDiscText {
+						font-size: 18px;
+						font-weight: 700;
+						margin-left: 40px;
+						color: white;
+					}
+				}
+				.discWrapper {
+					display: flex;
+					flex-direction: column;
+					margin-left: 40px;
+					margin-top: 30px;
+					p {
+						font-size: 14px;
+						font-weight: 400;
+						margin-bottom: 7px;
+					}
+				}
+				.barProg {
+					height: 80px;
+					display: flex;
+					align-items: center;
+					background: #f5f6fa;
+					.barProgText {
+						font-size: 18px;
+						font-weight: 400;
+						margin-left: 40px;
+						width: 250px;
+						span {
+							color: $pink;
+							font-size: 18px;
+							font-weight: 600;
+						}
+					}
+					.barPartnerText {
+						font-size: 18px;
+						font-weight: 600;
+						margin-left: 45px;
+					}
+				}
+				.trophies {
+					display: flex;
+					justify-content: center;
+					gap: 10px;
+					margin-top: 25px;
+				}
+				.partnerWrapper {
+					display: flex;
+					flex-direction: column;
+					margin-left: 40px;
+					margin-top: 5px;
+					p {
+						font-size: 14px;
+						font-weight: 400;
+					}
+				}
+				.partnerImage {
+					position: absolute;
+					right: 40px;
+					top: 80px;
+					border: 1px solid $pink;
+					border-radius: 50%;
+				}
+				.contact {
+					width: 255px;
+					height: 35px;
+					border: 1px solid $violet;
+					border-radius: 10px;
+					background-color: white;
+					margin: 15px 0 0 40px;
+					font-size: 16px;
+					font-weight: 400;
 				}
 			}
 		}
