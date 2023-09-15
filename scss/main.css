@@ -164,6 +164,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  height: 115px;
   border-radius: 10px;
   background: var(--gradient-gowny-kolor, linear-gradient(90deg, #34224f 0%, #ea167f 100%));
 }
@@ -250,7 +251,8 @@
 .profileContainer .profilePanel .creditLine .bottom .available .line {
   height: 1px;
   width: 100px;
-  background-color: black;
+  margin: 7px 0;
+  background-color: #8c8c8c;
 }
 .profileContainer .profilePanel .creditLine .bottom .termCost {
   margin-left: 40px;
@@ -386,6 +388,7 @@
 .profileContainer .profilePanel .profileBottom .item .barDisc .barDiscText {
   font-size: 18px;
   font-weight: 700;
+  font-style: normal;
   margin-left: 40px;
   color: white;
 }
@@ -598,7 +601,7 @@
 }
 .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .textPlus {
   font-size: 12px;
-  margin: 15px 0;
+  margin: 13px 0;
   padding-right: 50px;
 }
 .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .textPlus span {
@@ -633,8 +636,305 @@
           flex-direction: column;
 }
 
+@media (max-width: 1140px) {
+  .profileContainer {
+    width: 95vw;
+    margin: 20px auto 90px auto;
+  }
+  .profileContainer .menuWrapper {
+    width: 220px;
+  }
+  .profileContainer .menuWrapper .menuTitleWrapper {
+    font-size: 18px;
+  }
+  .profileContainer .menuWrapper .menuTitleWrapper .menuTitle {
+    margin-left: 50px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category {
+    width: 220px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category .categoryText {
+    font-size: 16px;
+    left: 50px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category .innerCategoryText {
+    font-size: 13px;
+    left: 50px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category .icon,
+  .profileContainer .menuWrapper .categories .mainCategory .category .cartIcon,
+  .profileContainer .menuWrapper .categories .mainCategory .category .apiIcon {
+    width: 22px;
+    height: 22px;
+    left: 20px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category .left {
+    width: 10px;
+    height: 30px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory .category .right {
+    width: 10px;
+    height: 30px;
+  }
+  .profileContainer .menuWrapper .categories .mainCategory.big {
+    margin-top: 15px;
+  }
+  .profileContainer .menuWrapper .categories .logOutButton {
+    width: 80%;
+    height: 35px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .profileContainer .profilePanel {
+    width: auto;
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .welcome {
+    width: auto;
+    height: 100px;
+  }
+  .profileContainer .profilePanel .welcome .welcomeText {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .welcome .welcomeImage {
+    display: none;
+  }
+  .profileContainer .profilePanel .creditLine {
+    width: auto;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profilePanel .creditLine .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 65px;
+  }
+  .profileContainer .profilePanel .creditLine .top .wallet {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 6px 30px;
+  }
+  .profileContainer .profilePanel .creditLine .top p {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .creditLine .top p .value {
+    color: white;
+    margin-left: 5px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost,
+  .profileContainer .profilePanel .creditLine .bottom .allCost,
+  .profileContainer .profilePanel .creditLine .bottom .available {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 21%;
+    font-size: 12px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost .line,
+  .profileContainer .profilePanel .creditLine .bottom .allCost .line,
+  .profileContainer .profilePanel .creditLine .bottom .available .line {
+    height: 1px;
+    width: 80px;
+    margin: 7px 0;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost {
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost .value {
+    font-size: 15px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .allCost .value {
+    font-size: 15px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .available .value {
+    font-size: 15px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .zipper {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    width: 50%;
+    margin: 10px 20px 0 20px;
+  }
+  .profileContainer .profilePanel .profileBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #34224f;
+  }
+  .profileContainer .profilePanel .profileBottom .item {
+    width: 100%;
+    height: 281px;
+    margin-top: 23px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .title {
+    height: 65px;
+    padding-left: 30px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .title .titleText {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .bar .barText {
+    font-size: 20px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .barDisc .barDiscText {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .discWrapper {
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .discWrapper p {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .barProg .barProgText {
+    font-size: 16px;
+    margin-left: 30px;
+    max-width: 250px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .barProg .barProgText span {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .barProg .barPartnerText {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .trophies {
+    gap: 10px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .partnerWrapper {
+    margin-left: 30px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .partnerWrapper p {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .partnerImage {
+    right: 10%;
+    top: 30%;
+  }
+  .profileContainer .profilePanel .profileBottom .item .contact {
+    width: 255px;
+    height: 35px;
+    margin: 15px 0 0 30px;
+    font-size: 14px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .advWrapper .adv {
+    padding-left: 30px;
+    max-height: 54px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .profileContainer .profilePanel .profileBottom .item .advWrapper .adv .text {
+    max-width: 195px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .advWrapper .adv .value {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .advWrapper .adv .value span {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .advWrapper .adv .guarantee {
+    max-width: 195px;
+    margin-right: 15px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem {
+    padding-left: 30px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .text {
+    max-width: 195px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value1 {
+    font-size: 16x;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value1 span {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value2 {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value2 span {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value3 {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value3 span {
+    font-size: 13px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value4 {
+    font-size: 16px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .value4 span {
+    font-size: 14px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem .textPlus {
+    font-size: 12px;
+    margin: 13px 0;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .plus {
+    border-top: 1px solid #eaeaea;
+    border-bottom: none;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .limitItem:nth-child(1) {
+    padding-top: 20px;
+  }
+  .profileContainer .profilePanel .profileBottom .item .limitWrapper .double {
+    border: none;
+  }
+}
 @media (max-width: 768px) {
   .profileContainer {
     margin: 100px auto 0 auto;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .zipper {
+    display: none;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost,
+  .profileContainer .profilePanel .creditLine .bottom .allCost,
+  .profileContainer .profilePanel .creditLine .bottom .available {
+    max-width: 80px;
+    font-size: 12px;
+  }
+  .profileContainer .profilePanel .creditLine .bottom .termCost {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=main.css.map */
