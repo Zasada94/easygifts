@@ -818,7 +818,7 @@ $red: #fd0000;
 			.menuTitleWrapper {
 				position: absolute;
 				left: 100%;
-
+				margin-left: 10px;
 				padding: 5px 10px;
 				cursor: pointer;
 				.menuTitle {
@@ -838,7 +838,7 @@ $red: #fd0000;
 			.menuTitleWrapper {
 				position: static;
 				left: 100%;
-				cursor: pointer;
+				margin-left: 0;
 				.menuTitle {
 					margin: 0 10px;
 				}

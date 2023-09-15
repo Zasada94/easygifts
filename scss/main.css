@@ -36,6 +36,7 @@
   background: #e3e3e3;
   border: 1px solid #eaeaea;
   border-radius: 10px 10px 0px 0px;
+  position: relative;
 }
 .profileContainer .data .data_title .title {
   font-size: 18px;
@@ -51,10 +52,11 @@
   margin-right: 10px;
 }
 .profileContainer .data .data_title .neccessary {
+  position: absolute;
+  right: 80px;
   font-size: 16px;
   font-weight: 400;
   color: #e6007e;
-  margin-left: 370px;
 }
 .profileContainer .data .data_title.data_title--company {
   margin-top: 33px;
@@ -183,6 +185,93 @@
   margin: 5px 40px 0 40px;
 }
 
+@media (max-width: 1140px) {
+  .profileContainer .data .welcome .welcomeText {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  .profileContainer .data .data_title {
+    height: 57px;
+  }
+  .profileContainer .data .data_title .title {
+    font-size: 16px;
+  }
+  .profileContainer .data .data_title .icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 30px;
+    margin-right: 5px;
+  }
+  .profileContainer .data .data_title .neccessary {
+    font-size: 14px;
+    margin-left: 20%;
+  }
+  .profileContainer .data .data_wrapper .data_item .subtitle {
+    font-size: 14px;
+  }
+  .profileContainer .data .data_wrapper .data_item .input {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .profileContainer .data .data_wrapper .data_item .input.logo_wrapper {
+    height: 100px;
+  }
+  .profileContainer .data .data_wrapper .data_item .data_item--wrapper .info {
+    font-size: 9px;
+  }
+  .profileContainer .data .data_wrapper .data_item .logo_wrapper--inner {
+    font-size: 14px;
+    height: 25px;
+    margin-top: 20px;
+  }
+  .profileContainer .data .data_wrapper .data_item .save {
+    height: 50px;
+    font-size: 14px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 5px 30px 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .profileContainer .data {
+    margin-left: 0px;
+  }
+  .profileContainer .data .welcome {
+    width: auto;
+    height: 65px;
+    margin-left: 120px;
+  }
+  .profileContainer .data .welcome .welcomeText {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+  .profileContainer .data .welcome .welcomeImage {
+    display: none;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 5px 30px 0 30px;
+  }
+}
+@media (max-width: 550px) {
+  .profileContainer .data .data_wrapper .data_item {
+    width: 100%;
+  }
+}
 .profileContainer {
   font-family: "Roboto";
   display: -webkit-box;
@@ -1094,6 +1183,7 @@
   .profileContainer .menuWrapper .menuTitleWrapper {
     position: absolute;
     left: 100%;
+    margin-left: 10px;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -1114,7 +1204,7 @@
   .profileContainer .menuWrapper.active .menuTitleWrapper {
     position: static;
     left: 100%;
-    cursor: pointer;
+    margin-left: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
