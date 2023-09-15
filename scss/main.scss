@@ -7,6 +7,7 @@ $orange: #fd4c00;
 $red: #fd0000;
 
 @import "your_data";
+@import "newsletter";
 
 .profileContainer {
 	font-family: "Roboto";
@@ -835,6 +836,7 @@ $red: #fd0000;
 		}
 		.menuWrapper.active {
 			left: 0;
+			transition: 0.5s;
 			.menuTitleWrapper {
 				position: static;
 				left: 100%;

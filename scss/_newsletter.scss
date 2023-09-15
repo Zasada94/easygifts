@@ -1,0 +1,58 @@
+.profileContainer {
+	.data {
+		.data_wrapper {
+			min-height: 967px;
+			margin-bottom: 90px;
+			width: 100%;
+			.data_wrapper--newsletter {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				background-color: white;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				background: var(--biay, #fff);
+				margin: 23px 40px 0 40px;
+				.data_item {
+					width: 100%;
+					margin-left: 35px;
+					padding-bottom: 25px;
+					.input {
+						width: 100%;
+						height: 50px;
+					}
+				}
+				.newsletter-sign {
+					width: 60%;
+					height: 50px;
+					border-radius: 10px;
+					border: 1px solid var(--Fiolet---kolor, #34224f);
+					background: var(--biay, #fff);
+					margin: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				.data_wrapper--newsletter {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-around;
+					.data_item {
+						width: 80%;
+						margin: 0;
+						.input {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
