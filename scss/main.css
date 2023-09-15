@@ -56,6 +56,10 @@
   color: #e6007e;
   margin-left: 370px;
 }
+.profileContainer .data .data_title.data_title--company {
+  margin-top: 33px;
+  border-radius: 0;
+}
 .profileContainer .data .data_wrapper {
   width: 100%;
   color: #34224f;
@@ -88,6 +92,84 @@
   font-size: 16px;
   font-weight: 400;
   padding-left: 25px;
+}
+.profileContainer .data .data_wrapper .data_item .input:disabled {
+  background: #e3e3e3;
+}
+.profileContainer .data .data_wrapper .data_item .input.logo_wrapper {
+  height: 120px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+.profileContainer .data .data_wrapper .data_item .data_item--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profileContainer .data .data_wrapper .data_item .data_item--wrapper .info {
+  color: #8c8c8c;
+  font-size: 10px;
+  font-weight: 400;
+  margin-left: 30px;
+  max-width: 60%;
+  margin-top: 10px;
+}
+.profileContainer .data .data_wrapper .data_item .logo_wrapper--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  height: 27px;
+  margin-top: 30px;
+}
+.profileContainer .data .data_wrapper .data_item .logo_wrapper--inner .search {
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  background: var(--szary-jasny, #eaeaea);
+  padding: 0 20px;
+}
+.profileContainer .data .data_wrapper .data_item .logo_wrapper--inner .additional {
+  margin-left: 10px;
+}
+.profileContainer .data .data_wrapper .data_item .save {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 57px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid var(--Fiolet---kolor, #34224f);
+  background: var(--Fiolet---kolor, #34224f);
+  margin-top: 60px;
 }
 .profileContainer .data .data_wrapper .data_wrapper--inner {
   display: -webkit-box;
