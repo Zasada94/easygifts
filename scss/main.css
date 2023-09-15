@@ -5,6 +5,7 @@
   display: flex;
   max-width: 1140px;
   margin: 20px auto 90px auto;
+  overflow: hidden;
 }
 .profileContainer p,
 .profileContainer h2,
@@ -13,6 +14,9 @@
 .profileContainer button {
   margin: 0;
   padding: 0;
+}
+.profileContainer .menuSwiper {
+  display: none;
 }
 .profileContainer .menuWrapper {
   width: 250px;
@@ -40,6 +44,9 @@
 }
 .profileContainer .menuWrapper .menuTitleWrapper .menuTitle {
   margin-left: 70px;
+}
+.profileContainer .menuWrapper .swipeArrow {
+  display: none;
 }
 .profileContainer .menuWrapper .categories {
   display: -webkit-box;
@@ -682,7 +689,7 @@
   .profileContainer .menuWrapper .categories .logOutButton {
     width: 80%;
     height: 35px;
-    margin: 0;
+    margin: 30px auto;
     font-size: 15px;
   }
   .profileContainer .profilePanel {
@@ -924,6 +931,47 @@
 @media (max-width: 768px) {
   .profileContainer {
     margin: 100px auto 0 auto;
+  }
+  .profileContainer .menuWrapper {
+    position: absolute;
+    left: -220px;
+    top: 25%;
+    z-index: 5;
+  }
+  .profileContainer .menuWrapper .menuTitleWrapper {
+    position: fixed;
+    left: 0;
+    top: 25%;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .profileContainer .menuWrapper .menuTitleWrapper .menuTitle {
+    margin: 0 10px;
+  }
+  .profileContainer .menuWrapper .swipeArrow {
+    display: block;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .profileContainer .menuWrapper.active {
+    left: 0;
+  }
+  .profileContainer .menuWrapper.active .menuTitleWrapper {
+    position: static;
+    left: 100%;
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .profileContainer .menuWrapper.active .menuTitleWrapper .menuTitle {
+    margin: 0 10px;
+  }
+  .profileContainer .menuWrapper.active .swipeArrow {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   .profileContainer .profilePanel .creditLine .bottom .zipper {
     display: none;

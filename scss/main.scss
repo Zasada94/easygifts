@@ -11,6 +11,7 @@ $red: #fd0000;
 	display: flex;
 	max-width: 1140px;
 	margin: 20px auto 90px auto;
+	overflow: hidden;
 
 	p,
 	h2,
@@ -20,7 +21,9 @@ $red: #fd0000;
 		margin: 0;
 		padding: 0;
 	}
-
+	.menuSwiper {
+		display: none;
+	}
 	.menuWrapper {
 		width: 250px;
 		background-color: #f7f7f7;
@@ -38,12 +41,13 @@ $red: #fd0000;
 			height: 65px;
 			display: flex;
 			align-items: center;
-
 			.menuTitle {
 				margin-left: 70px;
 			}
 		}
-
+		.swipeArrow {
+			display: none;
+		}
 		.categories {
 			display: flex;
 			flex-direction: column;
@@ -582,7 +586,7 @@ $red: #fd0000;
 				.logOutButton {
 					width: 80%;
 					height: 35px;
-					margin: 0;
+					margin: 30px auto;
 					font-size: 15px;
 				}
 			}
@@ -813,6 +817,45 @@ $red: #fd0000;
 @media (max-width: 768px) {
 	.profileContainer {
 		margin: 100px auto 0 auto;
+		.menuWrapper {
+			position: absolute;
+			left: -220px;
+			top: 25%;
+			z-index: 5;
+			.menuTitleWrapper {
+				position: fixed;
+				left: 0;
+				top: 25%;
+				padding: 5px 10px;
+				cursor: pointer;
+				.menuTitle {
+					margin: 0 10px;
+				}
+				border-radius: 10px;
+			}
+			.swipeArrow {
+				display: block;
+				width: 25px;
+				height: 25px;
+				transform: rotate(180deg);
+			}
+		}
+		.menuWrapper.active {
+			left: 0;
+			.menuTitleWrapper {
+				position: static;
+				left: 100%;
+				cursor: pointer;
+				.menuTitle {
+					margin: 0 10px;
+				}
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			.swipeArrow {
+				transform: rotate(0);
+			}
+		}
 		.profilePanel {
 			.creditLine {
 				.bottom {
