@@ -1,9 +1,8 @@
 .profileContainer {
 	.data {
 		.data_wrapper {
-			min-height: 978px;
-			margin-bottom: 90px;
 			width: 100%;
+			height: 100%;
 			.data_wrapper--newsletter {
 				display: flex;
 				justify-content: space-between;
@@ -39,8 +38,6 @@
 	.profileContainer {
 		.data {
 			.data_wrapper {
-				min-height: 967px;
-				margin-bottom: 90px;
 				width: 100%;
 			}
 		}
