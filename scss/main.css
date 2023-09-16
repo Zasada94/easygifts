@@ -250,7 +250,7 @@
   }
   .profileContainer .data .welcome .welcomeText {
     font-size: 22px;
-    margin-left: 30px;
+    margin: 0 auto;
   }
   .profileContainer .data .welcome .welcomeImage {
     display: none;
@@ -271,9 +271,14 @@
   .profileContainer .data .data_wrapper .data_item {
     width: 100%;
   }
+  .profileContainer .data .data_title .neccessary {
+    position: absolute;
+    right: 10px;
+    max-width: 40%;
+  }
 }
 .profileContainer .data .data_wrapper {
-  min-height: 967px;
+  min-height: 978px;
   margin-bottom: 90px;
   width: 100%;
 }
@@ -311,6 +316,13 @@
   margin: 25px;
 }
 
+@media (max-width: 1140px) {
+  .profileContainer .data .data_wrapper {
+    min-height: 967px;
+    margin-bottom: 90px;
+    width: 100%;
+  }
+}
 @media (max-width: 550px) {
   .profileContainer .data .data_wrapper .data_wrapper--newsletter {
     display: -webkit-box;
@@ -334,6 +346,170 @@
     width: 100%;
   }
 }
+.profileContainer .data .data_wrapper .status_wrapper {
+  position: relative;
+  width: 90%;
+  height: 270px;
+  margin: 25px auto;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  height: 100%;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .left {
+  margin: 25px 0 0 75px;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .left .congrats {
+  color: #e6007e;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .left .status_info {
+  font-size: 16px;
+  font-weight: 400;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .mid {
+  margin-top: 28px;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .mid .trophyWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .mid .starWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .right .status_more--info {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 55px 65px 0 0;
+}
+.profileContainer .data .data_wrapper .status_wrapper .status .right .trophy_next {
+  width: 85px;
+  height: 107px;
+  margin-left: 90px;
+  margin-top: 12px;
+}
+.profileContainer .data .data_wrapper .status_wrapper .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background: var(--brown-gradient, linear-gradient(90deg, #d09266 0.03%, #efbc87 26.06%, #d09266 48.43%, #f6d7b9 72.37%, #d09266 96.31%));
+}
+.profileContainer .data .data_wrapper .status_wrapper .bar .status_current {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  margin-left: 9.5%;
+}
+.profileContainer .data .data_wrapper .status_wrapper .bar .status_next {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  margin-right: 17%;
+}
+.profileContainer .data .data_wrapper .adv_wrapper {
+  width: 90%;
+  border-radius: 10px;
+  margin: 25px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_left {
+  width: 55%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_left .adv_item {
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 45px 10px 40px;
+  min-height: 50px;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_left .adv_item .adv_item_text {
+  font-size: 14px;
+  font-weight: 400;
+  width: 60%;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_left .adv_item .adv_item_number {
+  color: #54bf00;
+  font-size: 16px;
+  font-weight: 500;
+  width: 20%;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_left .adv_item .small {
+  font-size: 8px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+.profileContainer .data .data_wrapper .adv_wrapper .advantages_right {
+  width: 40%;
+  height: 280px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+}
+
 .profileContainer {
   font-family: "Roboto";
   display: -webkit-box;
@@ -343,13 +519,11 @@
   margin: 20px auto 90px auto;
   overflow: hidden;
 }
-.profileContainer p,
-.profileContainer h2,
-.profileContainer h1,
-.profileContainer h3,
-.profileContainer button {
+.profileContainer * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .profileContainer .menuSwiper {
   display: none;

@@ -8,6 +8,7 @@ $red: #fd0000;
 
 @import "your_data";
 @import "newsletter";
+@import "dev_program";
 
 .profileContainer {
 	font-family: "Roboto";
@@ -16,13 +17,10 @@ $red: #fd0000;
 	margin: 20px auto 90px auto;
 	overflow: hidden;
 
-	p,
-	h2,
-	h1,
-	h3,
-	button {
+	* {
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 	}
 	.menuSwiper {
 		display: none;
