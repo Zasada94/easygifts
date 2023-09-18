@@ -103,7 +103,55 @@
 	.profileContainer {
 		.data {
 			.data_wrapper {
-				width: 100%;
+				.data_wrapper_orders {
+					.data_inner_title {
+						font-size: 16px;
+						margin: 25px 0 15px 30px;
+					}
+					.data_item {
+						min-width: 92%;
+						width: auto;
+						height: auto;
+						align-items: center;
+						justify-content: space-evenly;
+						.data_right {
+							width: auto;
+							margin-left: 30px;
+							flex-direction: column;
+							.data_info {
+								.top {
+									font-size: 15px;
+									max-width: 95%;
+								}
+								.mid {
+									font-size: 13px;
+								}
+								.bot {
+									font-size: 13px;
+								}
+							}
+							.data_status {
+								.data_status_wrapper {
+									margin-top: 15px;
+									.status_left {
+										font-size: 15px;
+									}
+									.status_right {
+										font-size: 15px;
+									}
+									.status_right.status_sent {
+										color: $green;
+										font-size: 15px;
+									}
+								}
+								.details {
+									margin-top: 15px;
+									margin-bottom: 15px;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -113,7 +161,10 @@
 	.profileContainer {
 		.data {
 			.data_wrapper {
-				.data_wrapper--newsletter {
+				.data_wrapper_orders {
+					.data_item {
+						flex-direction: column;
+					}
 				}
 			}
 		}

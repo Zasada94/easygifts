@@ -806,8 +806,63 @@
 }
 
 @media (max-width: 1140px) {
-  .profileContainer .data .data_wrapper {
-    width: 100%;
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_inner_title {
+    font-size: 16px;
+    margin: 25px 0 15px 30px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item {
+    min-width: 92%;
+    width: auto;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right {
+    width: auto;
+    margin-left: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_info .top {
+    font-size: 15px;
+    max-width: 95%;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_info .mid {
+    font-size: 13px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_info .bot {
+    font-size: 13px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_status .data_status_wrapper {
+    margin-top: 15px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_status .data_status_wrapper .status_left {
+    font-size: 15px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_status .data_status_wrapper .status_right {
+    font-size: 15px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_status .data_status_wrapper .status_right.status_sent {
+    color: #54bf00;
+    font-size: 15px;
+  }
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item .data_right .data_status .details {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .profileContainer .data .data_wrapper .data_wrapper_orders .data_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .profileContainer {
