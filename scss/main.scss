@@ -9,6 +9,7 @@ $red: #fd0000;
 @import "your_data";
 @import "newsletter";
 @import "dev_program";
+@import "orders";
 
 .profileContainer {
 	font-family: "Roboto";
@@ -856,7 +857,7 @@ $red: #fd0000;
 				height: 65px;
 				margin-left: 120px;
 				.welcomeText {
-					font-size: 22px;
+					font-size: 24px;
 					margin-left: 30px;
 				}
 				.welcomeImage {
@@ -877,6 +878,18 @@ $red: #fd0000;
 					.termCost {
 						margin-left: 0;
 					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.profileContainer {
+		.profilePanel {
+			.welcome {
+				.welcomeText {
+					font-size: 20px;
+					margin: 0 auto;
 				}
 			}
 		}
