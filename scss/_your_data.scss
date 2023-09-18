@@ -18,11 +18,16 @@
 				linear-gradient(90deg, #34224f 0%, #ea167f 100%)
 			);
 			.welcomeText {
+				display: flex;
+				width: 279px;
+				height: 60px;
+				flex-direction: column;
+				justify-content: center;
 				color: white;
 				font-size: 28px;
 				font-weight: 500;
 				line-height: 160%;
-				margin-left: 40px;
+				margin: 2px 0 3px 40px;
 			}
 		}
 		.data_title {
@@ -223,7 +228,7 @@
 				margin-left: 120px;
 				.welcomeText {
 					font-size: 22px;
-					margin: 0 auto;
+					margin: 2px auto 3px auto;
 				}
 				.welcomeImage {
 					display: none;
