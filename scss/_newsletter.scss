@@ -29,6 +29,10 @@
 					background: var(--biay, #fff);
 					margin: 25px;
 				}
+				.newsletter-sign:hover {
+					background-color: $violet;
+					color: white;
+				}
 			}
 		}
 	}

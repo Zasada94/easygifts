@@ -417,6 +417,10 @@ $red: #fd0000;
 					font-size: 16px;
 					font-weight: 400;
 				}
+				.contact:hover {
+					background-color: $violet;
+					color: white;
+				}
 				.advWrapper {
 					display: flex;
 					flex-direction: column;
