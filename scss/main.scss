@@ -20,7 +20,8 @@ $red: #fd0000;
 	margin: 20px auto 90px auto;
 	overflow: hidden;
 
-	* {
+	*,
+	p {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
