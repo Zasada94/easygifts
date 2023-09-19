@@ -2,6 +2,7 @@
 	.data {
 		.data_wrapper_adresses {
 			display: flex;
+			flex-wrap: wrap;
 			padding-left: 30px;
 			.adress_item {
 				width: 248px;
@@ -13,12 +14,17 @@
 				.adress_item_data {
 					margin: 23px 0 0 25px;
 					.default {
+						height: 20px;
 						display: flex;
 						align-items: center;
 						margin: 10px 30px 16px 0;
 						.default_adress {
 							margin-bottom: 0px;
 							margin-left: 14px;
+						}
+						svg {
+							width: 20px;
+							height: 20px;
 						}
 					}
 					.default.not_default {
