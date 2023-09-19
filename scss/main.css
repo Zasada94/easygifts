@@ -1162,6 +1162,17 @@
   border: 1px solid #dfdfdf;
   background: var(--biay, #fff);
   margin: 23px 10px 0 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .adress_item_data {
   margin: 23px 0 0 25px;
@@ -1185,12 +1196,6 @@
   height: 20px;
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .adress_item_data .default.not_default {
-  height: 20px;
-}
-.profileContainer .data .data_wrapper_adresses .adress_item .adress_item_data .default.not_default .default_adress {
-  display: none;
-}
-.profileContainer .data .data_wrapper_adresses .adress_item .adress_item_data .default.not_default svg {
   display: none;
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .adress_item_data p {
@@ -1207,6 +1212,8 @@
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .line {
   width: 100%;
+  position: absolute;
+  bottom: 50px;
   height: 1px;
   background: #d9d9d9;
 }

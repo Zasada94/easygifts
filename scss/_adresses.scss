@@ -11,6 +11,10 @@
 				border: 1px solid #dfdfdf;
 				background: var(--biay, #fff);
 				margin: 23px 10px 0 10px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 				.adress_item_data {
 					margin: 23px 0 0 25px;
 					.default {
@@ -28,13 +32,7 @@
 						}
 					}
 					.default.not_default {
-						height: 20px;
-						.default_adress {
-							display: none;
-						}
-						svg {
-							display: none;
-						}
+						display: none;
 					}
 					p {
 						margin-bottom: 7px;
@@ -51,6 +49,8 @@
 				}
 				.line {
 					width: 100%;
+					position: absolute;
+					bottom: 50px;
 					height: 1px;
 					background: #d9d9d9;
 				}
