@@ -118,16 +118,108 @@
 	.profileContainer {
 		.data {
 			.data_wrapper {
+				width: 100%;
+				height: 100%;
 				.data_wrapper_invoices {
+					display: flex;
+					flex-direction: row;
+					.data_inner_title {
+						flex-direction: column;
+						width: 50px;
+						height: 784px;
+						margin: 15px 5px;
+
+						div {
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 140%;
+							transform: rotate(-90deg);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.title_date {
+							margin-left: 0;
+							height: 12%;
+							width: auto;
+						}
+						.title_name {
+							height: 13%;
+							width: auto;
+						}
+						.title_ordering {
+							height: 16%;
+							width: auto;
+						}
+						.title_amount {
+							height: 12%;
+							width: auto;
+						}
+						.title_status {
+							height: 16%;
+							width: auto;
+						}
+						.title_download {
+							height: 12%;
+							width: auto;
+						}
+						.title_number {
+							height: 13%;
+							margin-right: 0px;
+						}
+					}
+					.item_invoice {
+						flex-direction: column;
+						width: 120px;
+						height: 784px;
+						margin: 15px 5px;
+						overflow: hidden;
+
+						div {
+							font-size: 13px;
+							text-align: center;
+							display: inline-block;
+							top: 5%;
+							word-wrap: break-word;
+							position: relative;
+							padding: 0 2px;
+						}
+						.invoice_date {
+							margin-left: 0px;
+							height: 12%;
+							width: 100%;
+						}
+						.invoice_name {
+							height: 13%;
+							width: 100%;
+						}
+						.invoice_ordering {
+							height: 16%;
+							width: 100%;
+						}
+						.invoice_amount {
+							height: 12%;
+							width: 100%;
+						}
+						.invoice_status {
+							height: 16%;
+							width: 100%;
+						}
+						.invoice_download {
+							display: inline-block;
+							height: 12%;
+							padding-right: 0;
+							width: 100%;
+						}
+						.invoice_number {
+							height: 13%;
+							margin-right: 0px;
+							width: 100%;
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-@media (max-width: 550px) {
-	.profileContainer {
-		.data {
-		}
-	}
-}
