@@ -60,6 +60,10 @@
 					margin: 15px 20px 15px 0;
 					#adress_edit {
 						margin-right: 15px;
+						cursor: pointer;
+					}
+					#adress_delete {
+						cursor: pointer;
 					}
 				}
 				.adress_item_add {
@@ -72,6 +76,7 @@
 					border-radius: 10px;
 					border: none;
 					background: var(--biay, #fff);
+					cursor: pointer;
 					.add_adress {
 						display: flex;
 						height: 32px;
@@ -88,10 +93,12 @@
 		}
 	}
 }
-#adress_add_modal {
+#adress_add_modal,
+#adress_edit_modal {
 	display: none;
 }
-#adress_add_modal.visible {
+#adress_add_modal.visible,
+#adress_edit_modal.visible {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -106,7 +113,8 @@
 	p {
 		margin: 0;
 	}
-	.add_modal_wrapper {
+	.add_modal_wrapper,
+	.edit_modal_wrapper {
 		* {
 			margin: 0;
 			padding: 0;
@@ -235,10 +243,13 @@
 			}
 		}
 	}
-	#adress_add_modal.visible {
-		.add_modal_wrapper {
+	#adress_add_modal.visible,
+	#adress_edit_modal.visible {
+		.add_modal_wrapper,
+		.edit_modal_wrapper {
 			overflow-y: auto;
 			max-height: 100%;
+			max-width: 95%;
 			height: auto;
 			.data_title {
 				height: auto;
@@ -247,10 +258,13 @@
 					font-size: 16px;
 					max-width: 40%;
 				}
+				.icon {
+					margin-left: 30px;
+				}
 				.neccessary {
 					right: 20px;
 					font-size: 14px;
-					max-width: 40%;
+					max-width: 35%;
 				}
 			}
 			.data_item {
@@ -263,6 +277,9 @@
 					font-size: 14px;
 				}
 			}
+			.data_wrapper--inner {
+				margin: 0 30px 0 30px;
+			}
 			.add_bottom {
 				.is_default {
 					margin: 20px 0 20px 30px;
@@ -274,7 +291,7 @@
 				}
 				.save {
 					width: 40%;
-					margin-right: 37px;
+					margin: 20px 37px 20px 0;
 				}
 			}
 		}

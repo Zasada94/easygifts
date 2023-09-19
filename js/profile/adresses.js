@@ -153,3 +153,90 @@ const saveAddress = () => {
 };
 
 saveButton.addEventListener("click", saveAddress);
+
+//edit adress
+const editButtons = document.querySelectorAll("#adress_edit");
+
+const editAddressItem = (event) => {
+	const addressItem = event.target.closest(".adress_item");
+	if (addressItem) {
+		const addressData = addressItem.querySelector(".adress_item_data");
+		const companyName = addressData.querySelector(".company").textContent;
+		const street = addressData.querySelector(
+			".adress_line.first_line"
+		).textContent;
+		const postalCodeCity = addressData.querySelector(
+			".adress_line.second_line"
+		).textContent;
+		const tel = addressData.querySelector(".number").textContent;
+		const contactPerson = addressData.querySelector(".name").textContent;
+		const isDefault = addressData.querySelector(".default_adress");
+
+		const editModal = document.getElementById("adress_edit_modal");
+		editModal.classList.add("visible");
+
+		const companyNameInput = editModal.querySelector(".input.company");
+		const streetInput = editModal.querySelector(".input.adress");
+		const postalCodeInput = editModal.querySelector(".input.code");
+		const cityInput = editModal.querySelector(".input.city");
+		const telInput = editModal.querySelector(".input.phone");
+		const contactPersonInput = editModal.querySelector(".input.contact");
+		const isDefaultCheckbox = editModal.querySelector("#is_default");
+
+		companyNameInput.value = companyName;
+		streetInput.value = street;
+		const [postalCode, city] = postalCodeCity.split(" ");
+		postalCodeInput.value = postalCode;
+		cityInput.value = city;
+		telInput.value = tel;
+		contactPersonInput.value = contactPerson;
+
+		if (isDefault) {
+			isDefaultCheckbox.checked = true;
+		}
+
+		const saveButton = editModal.querySelector(".save");
+		saveButton.addEventListener("click", () => {
+			addressData.querySelector(".company").textContent =
+				companyNameInput.value;
+			addressData.querySelector(".adress_line.first_line").textContent =
+				streetInput.value;
+			addressData.querySelector(".adress_line.second_line").textContent =
+				postalCodeInput.value + " " + cityInput.value;
+			addressData.querySelector(".number").textContent = telInput.value;
+			addressData.querySelector(".name").textContent = contactPersonInput.value;
+
+			if (isDefaultCheckbox.checked) {
+				if (!isDefault) {
+					const defaultIcon = document.createElement("div");
+					defaultIcon.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M13 8L9 12L7 10M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                            stroke="#E6007E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    `;
+					addressData.querySelector(".default").appendChild(defaultIcon);
+
+					const defaultText = document.createElement("p");
+					defaultText.classList.add("default_adress");
+					defaultText.textContent = "Domyślny adres odbiorcy";
+					addressData.querySelector(".default").appendChild(defaultText);
+				}
+			} else {
+				const defaultIcon = addressData.querySelector(".default svg");
+				const defaultText = addressData.querySelector(".default_adress");
+				if (defaultIcon && defaultText) {
+					defaultIcon.remove();
+					defaultText.remove();
+				}
+			}
+
+			editModal.classList.remove("visible");
+		});
+	}
+};
+
+editButtons.forEach((button) => {
+	button.addEventListener("click", editAddressItem);
+});

@@ -1221,6 +1221,10 @@
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .bottom_bar #adress_edit {
   margin-right: 15px;
+  cursor: pointer;
+}
+.profileContainer .data .data_wrapper_adresses .adress_item .bottom_bar #adress_delete {
+  cursor: pointer;
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .adress_item_add {
   width: 100%;
@@ -1241,6 +1245,7 @@
   border-radius: 10px;
   border: none;
   background: var(--biay, #fff);
+  cursor: pointer;
 }
 .profileContainer .data .data_wrapper_adresses .adress_item .adress_item_add .add_adress {
   display: -webkit-box;
@@ -1261,11 +1266,13 @@
   font-weight: 400;
 }
 
-#adress_add_modal {
+#adress_add_modal,
+#adress_edit_modal {
   display: none;
 }
 
-#adress_add_modal.visible {
+#adress_add_modal.visible,
+#adress_edit_modal.visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,10 +1291,14 @@
   background: rgba(11, 11, 11, 0.7);
   z-index: 1051;
 }
-#adress_add_modal.visible p {
+#adress_add_modal.visible p,
+#adress_edit_modal.visible p {
   margin: 0;
 }
-#adress_add_modal.visible .add_modal_wrapper {
+#adress_add_modal.visible .add_modal_wrapper,
+#adress_add_modal.visible .edit_modal_wrapper,
+#adress_edit_modal.visible .add_modal_wrapper,
+#adress_edit_modal.visible .edit_modal_wrapper {
   width: 864px;
   height: auto;
   color: #34224f;
@@ -1295,11 +1306,17 @@
   border: 1px solid #dfdfdf;
   background: #f7f7f7;
 }
-#adress_add_modal.visible .add_modal_wrapper * {
+#adress_add_modal.visible .add_modal_wrapper *,
+#adress_add_modal.visible .edit_modal_wrapper *,
+#adress_edit_modal.visible .add_modal_wrapper *,
+#adress_edit_modal.visible .edit_modal_wrapper * {
   margin: 0;
   padding: 0;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_title {
+#adress_add_modal.visible .add_modal_wrapper .data_title,
+#adress_add_modal.visible .edit_modal_wrapper .data_title,
+#adress_edit_modal.visible .add_modal_wrapper .data_title,
+#adress_edit_modal.visible .edit_modal_wrapper .data_title {
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1312,12 +1329,18 @@
   border-radius: 10px 10px 0px 0px;
   position: relative;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_title .title {
+#adress_add_modal.visible .add_modal_wrapper .data_title .title,
+#adress_add_modal.visible .edit_modal_wrapper .data_title .title,
+#adress_edit_modal.visible .add_modal_wrapper .data_title .title,
+#adress_edit_modal.visible .edit_modal_wrapper .data_title .title {
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_title .icon {
+#adress_add_modal.visible .add_modal_wrapper .data_title .icon,
+#adress_add_modal.visible .edit_modal_wrapper .data_title .icon,
+#adress_edit_modal.visible .add_modal_wrapper .data_title .icon,
+#adress_edit_modal.visible .edit_modal_wrapper .data_title .icon {
   width: 25px;
   height: 25px;
   background-size: 100% auto;
@@ -1325,14 +1348,20 @@
   margin-left: 40px;
   margin-right: 10px;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_title .neccessary {
+#adress_add_modal.visible .add_modal_wrapper .data_title .neccessary,
+#adress_add_modal.visible .edit_modal_wrapper .data_title .neccessary,
+#adress_edit_modal.visible .add_modal_wrapper .data_title .neccessary,
+#adress_edit_modal.visible .edit_modal_wrapper .data_title .neccessary {
   position: absolute;
   right: 80px;
   font-size: 16px;
   font-weight: 400;
   color: #e6007e;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_item {
+#adress_add_modal.visible .add_modal_wrapper .data_item,
+#adress_add_modal.visible .edit_modal_wrapper .data_item,
+#adress_edit_modal.visible .add_modal_wrapper .data_item,
+#adress_edit_modal.visible .edit_modal_wrapper .data_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,14 +1371,20 @@
           flex-direction: column;
   width: 48%;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_item .subtitle {
+#adress_add_modal.visible .add_modal_wrapper .data_item .subtitle,
+#adress_add_modal.visible .edit_modal_wrapper .data_item .subtitle,
+#adress_edit_modal.visible .add_modal_wrapper .data_item .subtitle,
+#adress_edit_modal.visible .edit_modal_wrapper .data_item .subtitle {
   font-size: 16px;
   font-weight: 500;
   margin-top: 23px;
   margin-bottom: 13px;
   line-height: 140%;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_item .input {
+#adress_add_modal.visible .add_modal_wrapper .data_item .input,
+#adress_add_modal.visible .edit_modal_wrapper .data_item .input,
+#adress_edit_modal.visible .add_modal_wrapper .data_item .input,
+#adress_edit_modal.visible .edit_modal_wrapper .data_item .input {
   height: 50px;
   border-radius: 10px;
   border: 1px solid #dfdfdf;
@@ -1358,10 +1393,16 @@
   font-weight: 400;
   padding-left: 25px;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_item .input:disabled {
+#adress_add_modal.visible .add_modal_wrapper .data_item .input:disabled,
+#adress_add_modal.visible .edit_modal_wrapper .data_item .input:disabled,
+#adress_edit_modal.visible .add_modal_wrapper .data_item .input:disabled,
+#adress_edit_modal.visible .edit_modal_wrapper .data_item .input:disabled {
   background: #e3e3e3;
 }
-#adress_add_modal.visible .add_modal_wrapper .data_wrapper--inner {
+#adress_add_modal.visible .add_modal_wrapper .data_wrapper--inner,
+#adress_add_modal.visible .edit_modal_wrapper .data_wrapper--inner,
+#adress_edit_modal.visible .add_modal_wrapper .data_wrapper--inner,
+#adress_edit_modal.visible .edit_modal_wrapper .data_wrapper--inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1372,13 +1413,19 @@
           justify-content: space-between;
   margin: 0 40px 0 40px;
 }
-#adress_add_modal.visible .add_modal_wrapper .line {
+#adress_add_modal.visible .add_modal_wrapper .line,
+#adress_add_modal.visible .edit_modal_wrapper .line,
+#adress_edit_modal.visible .add_modal_wrapper .line,
+#adress_edit_modal.visible .edit_modal_wrapper .line {
   height: 1px;
   width: 100%;
   background: #dfdfdf;
   margin: 25px 0 0 0;
 }
-#adress_add_modal.visible .add_modal_wrapper .add_bottom {
+#adress_add_modal.visible .add_modal_wrapper .add_bottom,
+#adress_add_modal.visible .edit_modal_wrapper .add_bottom,
+#adress_edit_modal.visible .add_modal_wrapper .add_bottom,
+#adress_edit_modal.visible .edit_modal_wrapper .add_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1393,7 +1440,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
-#adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default {
+#adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default,
+#adress_add_modal.visible .edit_modal_wrapper .add_bottom .is_default,
+#adress_edit_modal.visible .add_modal_wrapper .add_bottom .is_default,
+#adress_edit_modal.visible .edit_modal_wrapper .add_bottom .is_default {
   margin: 40px 0 40px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1403,7 +1453,10 @@
           align-items: center;
   font-size: 16px;
 }
-#adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default {
+#adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default,
+#adress_add_modal.visible .edit_modal_wrapper .add_bottom .is_default #is_default,
+#adress_edit_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default,
+#adress_edit_modal.visible .edit_modal_wrapper .add_bottom .is_default #is_default {
   width: 19px;
   height: 19px;
   border-radius: 2px;
@@ -1411,7 +1464,10 @@
   background: var(--biay, #fff);
   margin-right: 13px;
 }
-#adress_add_modal.visible .add_modal_wrapper .add_bottom .save {
+#adress_add_modal.visible .add_modal_wrapper .add_bottom .save,
+#adress_add_modal.visible .edit_modal_wrapper .add_bottom .save,
+#adress_edit_modal.visible .add_modal_wrapper .add_bottom .save,
+#adress_edit_modal.visible .edit_modal_wrapper .add_bottom .save {
   color: white;
   width: 382px;
   height: 50px;
@@ -1420,7 +1476,10 @@
   background: var(--Fiolet---kolor, #34224f);
   margin-right: 37px;
 }
-#adress_add_modal.visible .add_modal_wrapper .add_bottom .save:hover {
+#adress_add_modal.visible .add_modal_wrapper .add_bottom .save:hover,
+#adress_add_modal.visible .edit_modal_wrapper .add_bottom .save:hover,
+#adress_edit_modal.visible .add_modal_wrapper .add_bottom .save:hover,
+#adress_edit_modal.visible .edit_modal_wrapper .add_bottom .save:hover {
   background: white;
   color: #34224f;
 }
@@ -1437,45 +1496,88 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #adress_add_modal.visible .add_modal_wrapper {
+  #adress_add_modal.visible .add_modal_wrapper,
+  #adress_add_modal.visible .edit_modal_wrapper,
+  #adress_edit_modal.visible .add_modal_wrapper,
+  #adress_edit_modal.visible .edit_modal_wrapper {
     overflow-y: auto;
     max-height: 100%;
+    max-width: 95%;
     height: auto;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_title {
+  #adress_add_modal.visible .add_modal_wrapper .data_title,
+  #adress_add_modal.visible .edit_modal_wrapper .data_title,
+  #adress_edit_modal.visible .add_modal_wrapper .data_title,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_title {
     height: auto;
     min-height: 65px;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_title .title {
+  #adress_add_modal.visible .add_modal_wrapper .data_title .title,
+  #adress_add_modal.visible .edit_modal_wrapper .data_title .title,
+  #adress_edit_modal.visible .add_modal_wrapper .data_title .title,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_title .title {
     font-size: 16px;
     max-width: 40%;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_title .neccessary {
+  #adress_add_modal.visible .add_modal_wrapper .data_title .icon,
+  #adress_add_modal.visible .edit_modal_wrapper .data_title .icon,
+  #adress_edit_modal.visible .add_modal_wrapper .data_title .icon,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_title .icon {
+    margin-left: 30px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_title .neccessary,
+  #adress_add_modal.visible .edit_modal_wrapper .data_title .neccessary,
+  #adress_edit_modal.visible .add_modal_wrapper .data_title .neccessary,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_title .neccessary {
     right: 20px;
     font-size: 14px;
-    max-width: 40%;
+    max-width: 35%;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_item {
+  #adress_add_modal.visible .add_modal_wrapper .data_item,
+  #adress_add_modal.visible .edit_modal_wrapper .data_item,
+  #adress_edit_modal.visible .add_modal_wrapper .data_item,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_item {
     min-width: 230px;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_item .subtitle {
+  #adress_add_modal.visible .add_modal_wrapper .data_item .subtitle,
+  #adress_add_modal.visible .edit_modal_wrapper .data_item .subtitle,
+  #adress_edit_modal.visible .add_modal_wrapper .data_item .subtitle,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_item .subtitle {
     font-size: 14px;
     margin: 15px 0 5px 0;
   }
-  #adress_add_modal.visible .add_modal_wrapper .data_item .input {
+  #adress_add_modal.visible .add_modal_wrapper .data_item .input,
+  #adress_add_modal.visible .edit_modal_wrapper .data_item .input,
+  #adress_edit_modal.visible .add_modal_wrapper .data_item .input,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_item .input {
     font-size: 14px;
   }
-  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default {
+  #adress_add_modal.visible .add_modal_wrapper .data_wrapper--inner,
+  #adress_add_modal.visible .edit_modal_wrapper .data_wrapper--inner,
+  #adress_edit_modal.visible .add_modal_wrapper .data_wrapper--inner,
+  #adress_edit_modal.visible .edit_modal_wrapper .data_wrapper--inner {
+    margin: 0 30px 0 30px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default,
+  #adress_add_modal.visible .edit_modal_wrapper .add_bottom .is_default,
+  #adress_edit_modal.visible .add_modal_wrapper .add_bottom .is_default,
+  #adress_edit_modal.visible .edit_modal_wrapper .add_bottom .is_default {
     margin: 20px 0 20px 30px;
     font-size: 14px;
     max-width: 50%;
   }
-  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default {
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default,
+  #adress_add_modal.visible .edit_modal_wrapper .add_bottom .is_default #is_default,
+  #adress_edit_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default,
+  #adress_edit_modal.visible .edit_modal_wrapper .add_bottom .is_default #is_default {
     margin-right: 7px;
   }
-  #adress_add_modal.visible .add_modal_wrapper .add_bottom .save {
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .save,
+  #adress_add_modal.visible .edit_modal_wrapper .add_bottom .save,
+  #adress_edit_modal.visible .add_modal_wrapper .add_bottom .save,
+  #adress_edit_modal.visible .edit_modal_wrapper .add_bottom .save {
     width: 40%;
-    margin-right: 37px;
+    margin: 20px 37px 20px 0;
   }
 }
 .profileContainer {
