@@ -1276,6 +1276,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -1400,6 +1401,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
 }
 #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default {
   width: 19px;
@@ -1434,6 +1436,46 @@
   .profileContainer .data .data_wrapper_adresses {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #adress_add_modal.visible .add_modal_wrapper {
+    overflow-y: auto;
+    max-height: 100%;
+    height: auto;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_title {
+    height: auto;
+    min-height: 65px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_title .title {
+    font-size: 16px;
+    max-width: 40%;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_title .neccessary {
+    right: 20px;
+    font-size: 14px;
+    max-width: 40%;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_item {
+    min-width: 230px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_item .subtitle {
+    font-size: 14px;
+    margin: 15px 0 5px 0;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .data_item .input {
+    font-size: 14px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default {
+    margin: 20px 0 20px 30px;
+    font-size: 14px;
+    max-width: 50%;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .is_default #is_default {
+    margin-right: 7px;
+  }
+  #adress_add_modal.visible .add_modal_wrapper .add_bottom .save {
+    width: 40%;
+    margin-right: 37px;
   }
 }
 .profileContainer {

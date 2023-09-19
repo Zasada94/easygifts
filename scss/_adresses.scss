@@ -96,6 +96,7 @@
 	align-items: center;
 	justify-content: center;
 	position: fixed;
+	overflow-y: auto;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -190,6 +191,7 @@
 				margin: 40px 0 40px 40px;
 				display: flex;
 				align-items: center;
+				font-size: 16px;
 				#is_default {
 					width: 19px;
 					height: 19px;
@@ -230,6 +232,50 @@
 			}
 			.data_wrapper_adresses {
 				flex-wrap: wrap;
+			}
+		}
+	}
+	#adress_add_modal.visible {
+		.add_modal_wrapper {
+			overflow-y: auto;
+			max-height: 100%;
+			height: auto;
+			.data_title {
+				height: auto;
+				min-height: 65px;
+				.title {
+					font-size: 16px;
+					max-width: 40%;
+				}
+				.neccessary {
+					right: 20px;
+					font-size: 14px;
+					max-width: 40%;
+				}
+			}
+			.data_item {
+				min-width: 230px;
+				.subtitle {
+					font-size: 14px;
+					margin: 15px 0 5px 0;
+				}
+				.input {
+					font-size: 14px;
+				}
+			}
+			.add_bottom {
+				.is_default {
+					margin: 20px 0 20px 30px;
+					font-size: 14px;
+					max-width: 50%;
+					#is_default {
+						margin-right: 7px;
+					}
+				}
+				.save {
+					width: 40%;
+					margin-right: 37px;
+				}
 			}
 		}
 	}
