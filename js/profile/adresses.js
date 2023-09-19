@@ -160,66 +160,23 @@ const editButtons = document.querySelectorAll("#adress_edit");
 const editModal = document.getElementById("adress_edit_modal");
 const editButton = document.getElementById("editButton");
 const isDefaultCheckbox = document.getElementById("is_def");
-let defaultDiv;
-let company;
-let firstLine;
-let secondLine;
-let name;
-let number;
+let defaultDiv; 
 
 const editAddressItem = (event) => {
 	const clickedElement = event.target.closest(".adress_item");
 	const hasNotDefaultChild = clickedElement.querySelector(".not_default");
-	defaultDiv = clickedElement.querySelector(".default");
+	defaultDiv = clickedElement.querySelector(".default"); 
 	console.log(defaultDiv);
-	if (clickedElement) {
-		const addressData = clickedElement.querySelector(".adress_item_data");
-		const companyName = addressData.querySelector(".company").textContent;
-		const street = addressData.querySelector(
-			".adress_line.first_line"
-		).textContent;
-		const postalCodeCity = addressData.querySelector(
-			".adress_line.second_line"
-		).textContent;
-		const tel = addressData.querySelector(".number").textContent;
-		const contactPerson = addressData.querySelector(".name").textContent;
-
-		const companyNameInput = editModal.querySelector(".input.company");
-		const streetInput = editModal.querySelector(".input.adress");
-		const postalCodeInput = editModal.querySelector(".input.code");
-		const cityInput = editModal.querySelector(".input.city");
-		const telInput = editModal.querySelector(".input.phone");
-		const contactPersonInput = editModal.querySelector(".input.contact");
-
-		companyNameInput.value = companyName;
-		streetInput.value = street;
-		const [postalCode, city] = postalCodeCity.split(" ");
-		postalCodeInput.value = postalCode;
-		cityInput.value = city;
-		telInput.value = tel;
-		contactPersonInput.value = contactPerson;
-
-		if (hasNotDefaultChild) {
-			isDefaultCheckbox.checked = false;
-			defaultDiv.style.display = "none";
-		} else {
-			isDefaultCheckbox.checked = true;
-			defaultDiv.style.display = "flex";
-		}
-
-		editModal.classList.add("visible");
-
-		editButton.addEventListener("click", () => {
-			addressData.querySelector(".company").textContent =
-				companyNameInput.value;
-			addressData.querySelector(".adress_line.first_line").textContent =
-				streetInput.value;
-			addressData.querySelector(".adress_line.second_line").textContent =
-				postalCodeInput.value + " " + cityInput.value;
-			addressData.querySelector(".number").textContent = telInput.value;
-			addressData.querySelector(".name").textContent = contactPersonInput.value;
-		});
+	
+	if (hasNotDefaultChild) {
+		isDefaultCheckbox.checked = false;
+		defaultDiv.style.display = "none";
+	} else {
+		isDefaultCheckbox.checked = true;
+		defaultDiv.style.display = "flex";
 	}
+
+	editModal.classList.add("visible");
 };
 
 editButtons.forEach((button) => {
