@@ -30,13 +30,14 @@
 				margin: 2px 0 3px 40px;
 			}
 		}
-		
+
 		.data_title.data_title--company {
 			margin-top: 33px;
 			border-radius: 0;
 		}
 		.data_wrapper {
 			width: 100%;
+			min-height: 852px;
 			color: $violet;
 			border-radius: 10px;
 			border: 1px solid #dfdfdf;

@@ -1,0 +1,205 @@
+.profileContainer {
+	.data {
+		.data_wrapper {
+			width: 100%;
+			height: 100%;
+			.data_wrapper_calc {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				.data_inner_title {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-evenly;
+					width: 784px;
+					height: 50px;
+					border-radius: 10px;
+					border: 1px solid #dfdfdf;
+					background: var(--fiolyet-jasny, #e0d2f6);
+					margin: 18px auto 15px auto;
+					div {
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 140%;
+					}
+					.title_date {
+						width: 15%;
+						margin-left: 25px;
+					}
+					.title_name {
+						width: 47%;
+					}
+					.title_price {
+						width: 14%;
+					}
+					.title_cart {
+						width: 12%;
+					}
+					.title_delete {
+						width: 12%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+				.item_calc {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+					width: 784px;
+					height: 83px;
+					border-radius: 10px;
+					border: 1px solid #dfdfdf;
+					background: var(--biay, #fff);
+					margin: 0 auto 10px auto;
+					div {
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 140%;
+					}
+					.calc_date {
+						width: 15%;
+						margin-left: 25px;
+					}
+					.calc_name_wrapper {
+						width: 47%;
+						.calc_name {
+						}
+						.calc_details {
+							font-size: 9px;
+							font-weight: 400;
+							line-height: 140%;
+						}
+					}
+					.calc_price {
+						width: 14%;
+					}
+					.calc_cart {
+						width: 12%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-shrink: 0;
+					}
+					.calc_delete {
+						width: 12%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				.data_wrapper_calc {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					.data_inner_title {
+						flex-direction: column;
+						width: 50px;
+						height: auto;
+						margin: 15px 5px;
+						div {
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 140%;
+							transform: rotate(-90deg);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.title_date {
+							height: 15%;
+							margin: 0;
+							width: auto;
+						}
+						.title_name {
+							height: 47%;
+							width: auto;
+						}
+						.title_price {
+							height: 14%;
+							width: auto;
+						}
+						.title_cart {
+							height: 12%;
+							width: auto;
+						}
+						.title_delete {
+							height: 12%;
+							width: auto;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+					}
+					.item_calc {
+						flex-direction: column;
+						width: 100px;
+						min-height: 784px;
+						margin: 15px 5px;
+						overflow: hidden;
+
+						div {
+							font-size: 13px;
+							padding: 0 2px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+						}
+						.calc_date {
+							height: 15%;
+							margin: 0;
+							width: auto;
+						}
+						.calc_name_wrapper {
+							height: 47%;
+							width: auto;
+							min-width: 350px;
+							transform: rotate(-90deg);
+							display: flex;
+							flex-direction: column;
+							.calc_name {
+								width: 100%;
+							}
+							.calc_details {
+								font-size: 9px;
+								font-weight: 400;
+								line-height: 140%;
+							}
+						}
+						.calc_price {
+							height: 14%;
+							width: auto;
+						}
+						.calc_cart {
+							height: 12%;
+							width: auto;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.calc_delete {
+							height: 12%;
+							width: auto;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
