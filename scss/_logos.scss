@@ -1,0 +1,88 @@
+.profileContainer {
+	.data {
+		.data_wrapper_logos {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 30px;
+			.logos_item {
+				width: 248px;
+				height: 270px;
+				flex-shrink: 0;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				background: var(--biay, #fff);
+				margin: 23px 10px 0 10px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.logos_item_data {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 248px;
+					height: 220px;
+				}
+				.line {
+					width: 100%;
+					position: absolute;
+					bottom: 53px;
+					height: 1px;
+					background: #d9d9d9;
+				}
+				.bottom_bar {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					text-transform: uppercase;
+					align-items: center;
+					margin: 15px 25px 19px 25px;
+					.title {
+						font-size: 12px;
+					}
+					.bar_right_wrapper {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						height: 17px;
+						.download {
+							cursor: pointer;
+							margin-right: 10px;
+						}
+						.delete {
+							cursor: pointer;
+						}
+					}
+				}
+				.logos_item_data.add_logo_wrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+					.drop {
+					}
+					.drop_info {
+						color: var(--szary-gowny, #333);
+						text-align: center;
+						font-family: Poppins;
+						font-size: 10px;
+						font-weight: 400;
+						line-height: normal;
+						margin-top: 14px;
+					}
+					.drop_add {
+						color: var(--roz, #e6007e);
+						font-family: Poppins;
+						font-size: 10px;
+						font-weight: 400;
+						line-height: normal;
+					}
+				}
+			}
+		}
+	}
+}
+
+
