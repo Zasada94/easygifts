@@ -7,7 +7,7 @@
 			.data_wrapper_invoices {
 				display: flex;
 				flex-direction: column;
-
+				flex-wrap: wrap;
 				.data_inner_title {
 					display: flex;
 					flex-direction: row;
@@ -222,4 +222,3 @@
 		}
 	}
 }
-

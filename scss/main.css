@@ -895,6 +895,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .profileContainer .data .data_wrapper .data_wrapper_invoices .data_inner_title {
   display: -webkit-box;

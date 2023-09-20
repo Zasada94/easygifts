@@ -160,14 +160,15 @@ const editButtons = document.querySelectorAll("#adress_edit");
 const editModal = document.getElementById("adress_edit_modal");
 const editButton = document.getElementById("editButton");
 const isDefaultCheckbox = document.getElementById("is_def");
-let defaultDiv; 
+const defaultDivs = document.querySelectorAll(".default");
+let defaultDiv;
 
 const editAddressItem = (event) => {
 	const clickedElement = event.target.closest(".adress_item");
 	const hasNotDefaultChild = clickedElement.querySelector(".not_default");
-	defaultDiv = clickedElement.querySelector(".default"); 
+	defaultDiv = clickedElement.querySelector(".default");
 	console.log(defaultDiv);
-	
+
 	if (hasNotDefaultChild) {
 		isDefaultCheckbox.checked = false;
 		defaultDiv.style.display = "none";
