@@ -1,0 +1,124 @@
+.profileContainer {
+	.data {
+		.data_wrapper_vis {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 30px;
+			.vis_item {
+				width: 248px;
+				height: 302px;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				background: var(--biay, #fff);
+				margin: 23px 10px 0 10px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.vis_item_data {
+					margin: 13px 26px 10px 26px;
+					.vis_item_image {
+						width: 196px;
+						height: 196px;
+					}
+				}
+				.line {
+					width: 100%;
+					position: absolute;
+					bottom: 83px;
+					height: 1px;
+					background: #d9d9d9;
+				}
+				.bottom_bar {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					text-transform: uppercase;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: normal;
+					.bar_top_wrapper {
+						display: flex;
+						justify-content: space-between;
+						margin: 0 22px 0 25px;
+						.title {
+							font-size: 12px;
+						}
+						.download {
+							width: 21px;
+							height: 17px;
+							flex-shrink: 0;
+							cursor: pointer;
+						}
+					}
+					.bar_bottom_wrapper {
+						display: flex;
+						justify-content: space-between;
+						margin: 15px 25px 15px 25px;
+						.subtitle {
+							font-size: 12px;
+						}
+						.date {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				.data_title {
+					height: auto;
+					min-height: 65px;
+
+					.title {
+						font-size: 16px;
+						max-width: 40%;
+					}
+					.neccessary {
+						position: absolute;
+						font-size: 13px;
+						right: 30px;
+						max-width: 40%;
+					}
+					.icon {
+						margin-left: 30px;
+					}
+				}
+			}
+			.data_wrapper_adresses {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				.data_title {
+					height: auto;
+					min-height: 65px;
+
+					.title {
+						font-size: 15px;
+						max-width: 40%;
+					}
+					.neccessary {
+						right: 10px;
+						max-width: 40%;
+					}
+				}
+			}
+			.data_wrapper_adresses {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
