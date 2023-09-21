@@ -234,8 +234,8 @@
 				height: 65px;
 				margin-left: 120px;
 				.welcomeText {
-					font-size: 22px;
-					margin: 2px auto 3px auto;
+					font-size: 20px;
+					margin-left: 30px;
 				}
 				.welcomeImage {
 					display: none;
@@ -256,6 +256,16 @@
 @media (max-width: 550px) {
 	.profileContainer {
 		.data {
+			.welcome {
+				width: auto;
+				height: 65px;
+				margin-left: 120px;
+				.welcomeText {
+					font-size: 20px;
+					margin: 2px auto 3px auto;
+					text-align: center;
+				}
+			}
 			.data_wrapper {
 				.data_item {
 					width: 100%;

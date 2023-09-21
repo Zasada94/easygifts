@@ -1,5 +1,14 @@
 .profileContainer {
 	.data {
+		.data_wrapper {
+			.data_title {
+				.title_adresses {
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 800;
+				}
+			}
+		}
 		.data_wrapper_adresses {
 			display: flex;
 			flex-wrap: wrap;
@@ -233,6 +242,12 @@
 				.data_title {
 					height: auto;
 					min-height: 65px;
+
+					.title_adresses {
+						max-width: 40%;
+						font-size: 16px;
+					}
+
 					.neccessary {
 						position: static;
 					}

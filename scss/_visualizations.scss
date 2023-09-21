@@ -1,5 +1,12 @@
 .profileContainer {
 	.data {
+		.data_wrapper {
+			.data_title {
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 800;
+			}
+		}
 		.data_wrapper_vis {
 			display: flex;
 			flex-wrap: wrap;
@@ -76,7 +83,7 @@
 					height: auto;
 					min-height: 65px;
 
-					.title {
+					.title_vis {
 						font-size: 16px;
 						max-width: 40%;
 					}
