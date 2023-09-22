@@ -110,3 +110,9 @@
 .logged_out_apla.active {
 	display: flex;
 }
+
+@media (max-width: 480px) {
+	.logged_out_apla {
+		right: -100%;
+	}
+}

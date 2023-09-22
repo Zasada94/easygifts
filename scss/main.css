@@ -3076,6 +3076,11 @@
   display: flex;
 }
 
+@media (max-width: 480px) {
+  .logged_out_apla {
+    right: -100%;
+  }
+}
 .login_apla_relative {
   position: relative;
 }

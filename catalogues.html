@@ -60,7 +60,8 @@
                                     <li><a href="https://www.ru.easygifts.com.pl/" title="RU">RU</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="login_apla_relative">
+
                                 <a class="btn-signin">
                             <figure>
                                 <img class="state1" src="/img/nav/ico_signin-new.png">
@@ -69,6 +70,37 @@
                             <div>
                                 <span id="top-login">Konto</span> | <span id="top-logout">Wyloguj</span>                            </div>
                         </a>
+                                <div class="login_apla">
+                                    <div class="name">Jan Kowalski</div>
+                                    <a id="profile">
+                                        <img src="/img/icons/profile/profilePanel/login1.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">Profil</p>
+                                    </a>
+                                    <a id="orders"> <img src="/img/icons/profile/profilePanel/login2.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">Zamówienia</p>
+                                    </a>
+                                    <a id="offers"> <img src="/img/icons/profile/profilePanel/login3.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">Oferty</p>
+                                    </a>
+                                    <a id="download"> <img src="/img/icons/profile/profilePanel/login4.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">Do pobrania</p>
+                                    </a>
+                                    <a id="api"> <img src="/img/icons/profile/profilePanel/login5.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">WEB API</p>
+                                    </a>
+                                    <a id="shop"> <img src="/img/icons/profile/profilePanel/login6.png" alt=""
+                                            class="profile_icon">
+                                        <p class="profile_text">Sklep NO-NAME</p>
+                                    </a>
+                                    <div class="line"></div>
+                                    <a href="logged_out.html">
+                                    <button id="logout_button">Wyloguj się</button></a>
+                                </div>
                             </li>
 
                             <li class="">
@@ -607,8 +639,8 @@
                     </a>
                 </label>
                 <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="catalogues.html" checked="checked">
+                    <input type="radio" name="cat" class="radioInput" checked="checked"/>
+                    <a class="category" href="catalogues.html" >
                         <div class="left"></div>
                         <p class="innerCategoryText">Katalogi</p>
                         <div class="right"></div>
