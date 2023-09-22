@@ -8,104 +8,103 @@
 	top: 100%;
 	right: 0;
 	width: 295px;
-	height: 372px;
+	height: 285px;
 	flex-shrink: 0;
 	border-radius: 10px;
 	background: var(--biay, #fff);
-	box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
 	flex-direction: column;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: $violet;
 	z-index: 2000;
 	.name {
-		margin: 30px 0 0 25px;
+		margin: 30px 0 20px 5px;
 		font-size: 18px;
 		font-weight: 700;
 		line-height: normal;
 	}
-
-	#profile {
-		display: flex;
-		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	#orders {
-		display: flex;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	#offers {
-		display: flex;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	#download {
-		display: flex;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	#api {
-		display: flex;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	#shop {
-		display: flex;
-		margin-bottom: 14px;
-		color: $violet;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 14px;
-		cursor: pointer;
-	}
-	.line {
+	.apla_email {
 		width: 255px;
-		height: 1px;
-		background-color: black;
+		height: 40px;
+		flex-shrink: 0;
+		background-image: url(/img/icons/profile/profilePanel/mail.png);
+		background-repeat: no-repeat;
+		text-indent: 20px;
+		background-position-y: center;
+		background-position-x: 10px;
+		border: 1px solid var(--szary-ciemny, #8c8c8c);
+		margin-bottom: 15px;
+        padding-left: 10px;
 	}
-	.logout_button {
+	.apla_email::placeholder {
+		padding-left: 10px;
+		color: var(--Fiolet---kolor, #34224f);
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.apla_pass {
+		width: 255px;
+		height: 40px;
+		flex-shrink: 0;
+		background-image: url(/img/icons/profile/profilePanel/pass.png);
+		background-repeat: no-repeat;
+		text-indent: 20px;
+		background-position-y: center;
+		background-position-x: 13px;
+		border: 1px solid var(--szary-ciemny, #8c8c8c);
+        padding-left: 10px;
+	}
+	.apla_pass::placeholder {
+		padding-left: 10px;
+		color: var(--Fiolet---kolor, #34224f);
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.input_wrapper {
+		position: relative;
+		#see {
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 15px;
+		}
+	}
+
+	#logout_button {
+		color: $violet;
+		font-size: 16px;
 		width: 255px;
 		height: 35px;
 		flex-shrink: 0;
 		border: 1px solid var(--Fiolet---kolor, #34224f);
-		background: var(--biay, #fff);
-		margin-top: 14px;
-		cursor: pointer;
-	}
-	.logout_button:hover {
+
 		background: $violet;
 		color: white;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		cursor: pointer;
 	}
-	.profile_icon {
-		width: 23px;
-		height: 23px;
-		margin-right: 12px;
+	#logout_button:hover {
+		background: var(--biay, #fff);
+		color: $violet;
 	}
-	.profile_text {
+	#forgot {
 		margin: 0;
+		color: $violet;
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+	#register {
+		margin: 0;
+		color: $violet;
+		font-size: 12px;
 	}
 }
 .logged_out_apla.active {
