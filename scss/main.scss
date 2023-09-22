@@ -20,6 +20,7 @@ $red: #fd0000;
 @import "marketing";
 @import "newslettery";
 @import "videos";
+@import "logged_out";
 
 .login_apla_relative {
 	position: relative;
@@ -109,7 +110,9 @@ $red: #fd0000;
 		height: 1px;
 		background-color: black;
 	}
-	.logout_button {
+	#logout_button {
+		color: $violet;
+		font-size: 16px;
 		width: 255px;
 		height: 35px;
 		flex-shrink: 0;

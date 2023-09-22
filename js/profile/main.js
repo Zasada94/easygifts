@@ -11,3 +11,5 @@ const apla = document.querySelector(".login_apla");
 loginTrigger.addEventListener("click", () => {
 	apla.classList.toggle("active");
 });
+
+

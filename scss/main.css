@@ -2881,6 +2881,142 @@
   height: 17px;
 }
 
+.logged_out_apla_relative {
+  position: relative;
+}
+
+.logged_out_apla {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 295px;
+  height: 372px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--biay, #fff);
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #34224f;
+  z-index: 2000;
+}
+.logged_out_apla .name {
+  margin: 30px 0 0 25px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+.logged_out_apla #profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla #orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla #offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla #download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla #api {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla #shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+  color: #34224f;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logged_out_apla .line {
+  width: 255px;
+  height: 1px;
+  background-color: black;
+}
+.logged_out_apla .logout_button {
+  width: 255px;
+  height: 35px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid var(--Fiolet---kolor, #34224f);
+  background: var(--biay, #fff);
+  margin-top: 14px;
+  cursor: pointer;
+}
+.logged_out_apla .logout_button:hover {
+  background: #34224f;
+  color: white;
+}
+.logged_out_apla .profile_icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+}
+.logged_out_apla .profile_text {
+  margin: 0;
+}
+
+.logged_out_apla.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .login_apla_relative {
   position: relative;
 }
@@ -2988,7 +3124,9 @@
   height: 1px;
   background-color: black;
 }
-.login_apla .logout_button {
+.login_apla #logout_button {
+  color: #34224f;
+  font-size: 16px;
   width: 255px;
   height: 35px;
   -ms-flex-negative: 0;
