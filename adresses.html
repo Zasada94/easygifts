@@ -797,6 +797,84 @@
 
         </section>
     </main>
+    <div id="adress_add_modal">
+        <form class="add_modal_wrapper">
+            <div class="data_title">
+                <div class="icon"></div>
+                <p class="title">DODAJ ADRES DOSTAWY</p>
+                <p class="neccessary">Pola oznaczone * są wymagane.</p>
+            </div>
+            <div class="data_wrapper--inner">
+                <div class="data_item">
+                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
+                        value="Ulica 44">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
+                        value="Mirosław Kozłowski">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="add_bottom">
+                <div class="is_default">
+                    <input type="checkbox" name="default" id="is_default" checked="checked" />
+                    <label for="default">Domyślny adres dostawy</label>
+                </div>
+                <button class="save" type="submit">Zapisz</button>
+            </div>
+        </form>
+    </div>
+    <div id="adress_edit_modal">
+        <div class="edit_modal_wrapper">
+            <div class="data_title">
+                <div class="icon"></div>
+                <p class="title">EDYTUJ ADRES DOSTAWY</p>
+                <p class="neccessary">Pola oznaczone * są wymagane.</p>
+            </div>
+            <div class="data_wrapper--inner">
+                <div class="data_item">
+                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
+                        value="Ulica 44">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
+                </div>
+                <div class="data_item">
+                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
+                        value="Mirosław Kozłowski">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="add_bottom">
+                <div class="is_default">
+                    <input type="checkbox" name="default" id="is_def" />
+                    <label for="default">Domyślny adres dostawy</label>
+                </div>
+                <button class="save" id="editButton">Zapisz</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-outline">
             <div class="container">
@@ -1011,84 +1089,6 @@
 
         </section>
     </footer>
-    <div id="adress_add_modal">
-        <form class="add_modal_wrapper">
-            <div class="data_title">
-                <div class="icon"></div>
-                <p class="title">DODAJ ADRES DOSTAWY</p>
-                <p class="neccessary">Pola oznaczone * są wymagane.</p>
-            </div>
-            <div class="data_wrapper--inner">
-                <div class="data_item">
-                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
-                        value="Ulica 44">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
-                        value="Mirosław Kozłowski">
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="add_bottom">
-                <div class="is_default">
-                    <input type="checkbox" name="default" id="is_default" checked="checked" />
-                    <label for="default">Domyślny adres dostawy</label>
-                </div>
-                <button class="save" type="submit">Zapisz</button>
-            </div>
-        </form>
-    </div>
-    <div id="adress_edit_modal">
-        <div class="edit_modal_wrapper">
-            <div class="data_title">
-                <div class="icon"></div>
-                <p class="title">EDYTUJ ADRES DOSTAWY</p>
-                <p class="neccessary">Pola oznaczone * są wymagane.</p>
-            </div>
-            <div class="data_wrapper--inner">
-                <div class="data_item">
-                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
-                        value="Ulica 44">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
-                        value="Mirosław Kozłowski">
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="add_bottom">
-                <div class="is_default">
-                    <input type="checkbox" name="default" id="is_def" />
-                    <label for="default">Domyślny adres dostawy</label>
-                </div>
-                <button class="save" id="editButton">Zapisz</button>
-            </div>
-        </div>
-    </div>
     <div id="toTop">Back to Top</div>
     <div id="overlay" class="modal-backdrop fade hidden"></div>
     <script src="/js/easygifts_libraries.min.js"></script>

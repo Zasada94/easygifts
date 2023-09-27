@@ -3517,7 +3517,7 @@
   background: #fff;
 }
 .profileContainer .profilePanel .creditLine .bottom .red {
-  background-color: #fd4c00;
+  background-color: #fd0000;
   height: 16px;
   width: 3%;
   border-radius: 5px 0px 0px 5px;
@@ -3758,7 +3758,7 @@
   margin-right: 15px;
 }
 .profileContainer .profilePanel .profileBottom .item .advWrapper .adv .guarantee span {
-  font-size: 8px;
+  font-size: 9px;
   line-height: 100%;
   color: #8c8c8c;
 }
