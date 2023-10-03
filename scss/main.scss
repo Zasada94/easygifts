@@ -21,6 +21,9 @@ $red: #fd0000;
 @import "newslettery";
 @import "videos";
 @import "logged_out";
+@import "negotiations";
+@import "pricelist";
+@import "webapi";
 
 .login_apla_relative {
 	position: relative;
@@ -319,7 +322,7 @@ $red: #fd0000;
 			.top {
 				display: flex;
 				align-items: center;
-				background-color: #49a600;
+				background-color: #76ca34;
 				border-top-left-radius: 10px;
 				border-top-right-radius: 10px;
 				height: 65px;

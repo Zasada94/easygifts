@@ -4,11 +4,11 @@
 			width: 100%;
 			height: 100%;
 			.data_title {
-				.thirdIcon {
-					background-image: url(/img/icons/profile/documents.png);
+				.secondIcon {
+					background-image: url(/img/icons/profile/offers.png);
 				}
 			}
-			.data_wrapper_calc {
+			.data_wrapper_negotiations {
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
@@ -28,72 +28,51 @@
 						font-weight: 700;
 						line-height: 140%;
 					}
-					.title_date {
+					.title_name {
 						width: 15%;
 						margin-left: 25px;
 					}
-					.title_name {
-						width: 47%;
+					.title_products {
+						width: 45%;
 					}
-					.title_price {
-						width: 14%;
-					}
-					.title_cart {
-						width: 12%;
+					.title_order {
+						width: 20%;
 					}
 					.title_delete {
-						width: 12%;
-						display: flex;
-						align-items: center;
-						justify-content: center;
+						width: 20%;
 					}
 				}
-				.item_calc {
+				.item_order {
 					display: flex;
 					flex-direction: row;
 					justify-content: space-evenly;
 					align-items: center;
 					width: 784px;
-					height: 83px;
+					height: 50px;
 					border-radius: 10px;
 					border: 1px solid #dfdfdf;
 					background: var(--biay, #fff);
 					margin: 0 auto 10px auto;
 					div {
-						font-size: 16px;
+						font-size: 14px;
 						font-weight: 400;
 						line-height: 140%;
 					}
-					.calc_date {
+					.offer_name {
 						width: 15%;
 						margin-left: 25px;
 					}
-					.calc_name_wrapper {
-						width: 47%;
-						.calc_name {
-						}
-						.calc_details {
-							font-size: 9px;
-							font-weight: 400;
-							line-height: 140%;
-						}
+					.offer_products {
+						width: 45%;
 					}
-					.calc_price {
-						width: 14%;
+					.offer_order {
+						width: 20%;
 					}
-					.calc_cart {
-						width: 12%;
+					.offer_delete {
+						width: 20%;
 						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-shrink: 0;
-					}
-					.calc_delete {
-						width: 12%;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-shrink: 0;
+						justify-content: flex-end;
+						padding-right: 25px;
 					}
 				}
 			}
@@ -105,14 +84,50 @@
 	.profileContainer {
 		.data {
 			.data_wrapper {
-				.data_wrapper_calc {
+				.data_title {
+					.title {
+						max-width: 100%;
+					}
+				}
+				.data_wrapper_negotiations {
+					width: 100%;
+					.data_inner_title {
+						width: 95%;
+						height: 50px;
+						margin: 18px auto 15px auto;
+						div {
+							font-size: 16px;
+						}
+					}
+					.item_order {
+						width: 95%;
+						margin: 0 auto 10px auto;
+						div {
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 140%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				width: 100%;
+				height: 100%;
+				.data_wrapper_negotiations {
 					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
 					.data_inner_title {
 						flex-direction: column;
 						width: 50px;
-						height: auto;
+						height: 784px;
 						margin: 15px 5px;
 						div {
 							font-size: 16px;
@@ -123,35 +138,28 @@
 							align-items: center;
 							justify-content: center;
 						}
-						.title_date {
+						.title_name {
+							width: auto;
 							height: 15%;
 							margin: 0;
-							width: auto;
 						}
-						.title_name {
-							height: 47%;
+						.title_products {
 							width: auto;
+							height: 45%;
 						}
-						.title_price {
-							height: 14%;
+						.title_order {
 							width: auto;
-						}
-						.title_cart {
-							height: 12%;
-							width: auto;
+							height: 20%;
 						}
 						.title_delete {
-							height: 12%;
 							width: auto;
-							display: flex;
-							align-items: center;
-							justify-content: center;
+							height: 20%;
 						}
 					}
-					.item_calc {
+					.item_order {
 						flex-direction: column;
-						width: 100px;
-						min-height: 784px;
+						width: 70px;
+						height: 784px;
 						margin: 15px 5px;
 						overflow: hidden;
 
@@ -161,46 +169,26 @@
 							display: flex;
 							align-items: center;
 							justify-content: center;
+						}
+						.offer_name {
+							height: 15%;
+							min-width: 250px;
+							transform: rotate(-90deg);
+							margin-left: 0;
+						}
+						.offer_products {
+							width: auto;
+							height: 45%;
 							text-align: center;
 						}
-						.calc_date {
-							height: 15%;
-							margin: 0;
+						.offer_order {
 							width: auto;
+							height: 20%;
 						}
-						.calc_name_wrapper {
-							height: 47%;
+						.offer_delete {
 							width: auto;
-							min-width: 350px;
-							transform: rotate(-90deg);
-							display: flex;
-							flex-direction: column;
-							.calc_name {
-								width: 100%;
-							}
-							.calc_details {
-								font-size: 9px;
-								font-weight: 400;
-								line-height: 140%;
-							}
-						}
-						.calc_price {
-							height: 14%;
-							width: auto;
-						}
-						.calc_cart {
-							height: 12%;
-							width: auto;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-						}
-						.calc_delete {
-							height: 12%;
-							width: auto;
-							display: flex;
-							align-items: center;
-							justify-content: center;
+							height: 20%;
+							padding-right: 0;
 						}
 					}
 				}

@@ -5,7 +5,7 @@
 				position: relative;
 				width: 90%;
 				height: 270px;
-				margin: 25px auto;
+				margin: 25px auto 90px auto;
 				background-color: white;
 				border-radius: 10px;
 				border: 1px solid #dfdfdf;
@@ -59,6 +59,9 @@
 							margin-top: 12px;
 						}
 					}
+					.right.platinium {
+						width: 100px;
+					}
 				}
 				.bar {
 					display: flex;
@@ -89,6 +92,62 @@
 						font-style: italic;
 						font-weight: 700;
 						margin-right: 18%;
+					}
+				}
+				.bar.platinium {
+					background: linear-gradient(
+						90deg,
+						#b8b8b8 0.03%,
+						#efefef 26.06%,
+						#c8c8c8 48.43%,
+						#fafafa 72.37%,
+						#cdcdcd 96.31%
+					);
+				}
+				.status_bar {
+					position: absolute;
+					bottom: -60px;
+					left: 50%;
+					transform: translate(-50%, 0);
+					.status_bar_info {
+						color: var(--Fiolet---kolor, #34224f);
+						font-family: Roboto;
+						font-size: 12px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 140%;
+						text-align: center;
+						margin-bottom: 8px;
+						span {
+							color: var(--roz, #e6007e);
+							font-family: Roboto;
+							font-size: 12px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 140%;
+						}
+					}
+					.bar_outside {
+						width: 364px;
+						height: 20px;
+						flex-shrink: 0;
+						border-radius: 5px;
+						border: 0.5px solid var(--szary-ciemny, #8c8c8c);
+						background: var(--biay, #fff);
+						display: flex;
+						align-items: center;
+					}
+					.bar_inside {
+						width: 261px;
+						height: 16px;
+						flex-shrink: 0;
+						border-radius: 5px 0px 0px 5px;
+						background: var(--roz, #e6007e);
+						margin-left: 2px;
+					}
+					.bar_inside.platinium {
+						width: 358px;
+						border-radius: 5px;
 					}
 				}
 			}
@@ -294,6 +353,9 @@
 						.mid {
 							margin-right: 20%;
 						}
+						.mid#platinium {
+							margin-right: 5%;
+						}
 						.right {
 							display: none;
 						}
@@ -305,6 +367,55 @@
 						}
 						.status_next {
 							display: none;
+						}
+					}
+					.status_bar {
+						position: absolute;
+						bottom: -60px;
+						left: 50%;
+						transform: translate(-50%, 0);
+						width: 95%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						.status_bar_info {
+							color: var(--Fiolet---kolor, #34224f);
+							font-family: Roboto;
+							font-size: 10px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 140%;
+							text-align: center;
+							margin-bottom: 8px;
+							span {
+								color: var(--roz, #e6007e);
+								font-family: Roboto;
+								font-size: 12px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 140%;
+							}
+						}
+						.bar_outside {
+							width: 264px;
+							height: 20px;
+							flex-shrink: 1;
+							border-radius: 5px;
+							border: 0.5px solid var(--szary-ciemny, #8c8c8c);
+							background: var(--biay, #fff);
+							display: flex;
+							align-items: center;
+						}
+						.bar_inside {
+							height: 16px;
+							flex-shrink: 1;
+							border-radius: 5px 0px 0px 5px;
+							background: var(--roz, #e6007e);
+							margin-left: 2px;
+						}
+						.bar_inside.platinium {
+							width: 258px;
+							border-radius: 5px;
 						}
 					}
 				}

@@ -3,6 +3,11 @@
 		.data_wrapper {
 			width: 100%;
 			height: 100%;
+			.data_title {
+				.secondIcon {
+					background-image: url(/img/icons/profile/offers.png);
+				}
+			}
 			.data_wrapper_offers {
 				display: flex;
 				flex-direction: column;

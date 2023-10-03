@@ -1,0 +1,116 @@
+.profileContainer {
+	.data {
+		.data_wrapper {
+			width: 100%;
+			height: 100%;
+			.data_title {
+				.thirdIcon {
+					background-image: url(/img/icons/profile/documents.png);
+				}
+			}
+			.data_wrapper_pricelist {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				margin-top: 23px;
+				.item_order {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+					width: 784px;
+					height: 50px;
+					border-radius: 10px;
+					border: 1px solid #dfdfdf;
+					background: var(--biay, #fff);
+					margin: 0 auto 10px auto;
+					div {
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 140%;
+					}
+					.offer_name {
+						width: 50%;
+						margin-left: 25px;
+					}
+					.offer_delete {
+						width: 50%;
+						display: flex;
+						justify-content: flex-end;
+						padding-right: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				.data_title {
+					.title {
+						max-width: 100%;
+					}
+				}
+				.data_wrapper_pricelist {
+					width: 100%;
+					.item_order {
+						width: 95%;
+						margin: 0 auto 10px auto;
+						div {
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 140%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profileContainer {
+		.data {
+			.data_wrapper {
+				width: 100%;
+				height: 100%;
+				.data_wrapper_pricelist {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					.item_order {
+						flex-direction: column;
+						width: 70px;
+						height: 784px;
+						margin: 15px 5px;
+						overflow: hidden;
+
+						div {
+							font-size: 13px;
+							padding: 0 2px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						.offer_name {
+							height: 50%;
+							min-width: 250px;
+							transform: rotate(-90deg);
+							margin-left: 0;
+						}
+						.offer_delete {
+							width: auto;
+							height: 50%;
+							padding-right: 0;
+							min-width: 250px;
+							transform: rotate(-90deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}

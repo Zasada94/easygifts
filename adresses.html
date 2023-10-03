@@ -1,1094 +1,1618 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Twoje adresy dostaw - Gadżety reklamowe - PCM Sp. z o.o. EASY GIFTS Sp.k.</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,latin-ext"
-        rel="stylesheet">
-    <link href="/css/easygifts.css?v=1694599303" rel="stylesheet">
-    <link href="/css/menu.css?v=1688889211" rel="stylesheet">
-    <link href="/css/profile.css?v=1645177719" rel="stylesheet">
-    <link href="/css/extras.css?v=1690473256" rel="stylesheet">
-    <link href="/scss/main.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav id="main-nav" class="navbar navbar-fixed-top">
-        <div class="top-menu">
-            <div class="container">
-                <div class="inner">
-                    <div class="logo hidden-xs">
-                        <div>
-                            <a href="https://www.easygifts.com.pl" title="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo">
-                        <img class="img-responsive" src="/img/logo/easygifts_logo_new.jpg" alt="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo">
-                    </a>
-                        </div>
-                    </div>
-                    <div class="search">
-                        <form class="form-search" method="get" action="/search.php">
-                            <div class="dc-input border-all">
-                                <input type="hidden" name="dosearch" value="1">
-                                <input type="text" name="query" value="" placeholder="Szukaj" aria-label="Szukaj">
-                                <button class="btn btn-search">
-                                    <i class="icon-search"></i>
-                                </button>
-                            </div>
-                            <a href="/search.php?adv=1" title="Wyszukiwarka zaawansowana">Wyszukiwarka zaawansowana</a>
-                        </form>
-                    </div>
-                    <div class="access">
-                        <ul class="access-list">
-                            <li class="dropdown">
-                                <a href="javascript:void('change-language');" class="dropdown-toggle btn-lang" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <figure>
-            <img src="/img/nav/flag_pl-new.png" alt="PL">
-            <img class="arrow state1" src="/img/global/arrow_dropdow_bottom.png" alt="Język">
-            <img class="arrow state2" src="/img/global/arrow_dropdow_bottom_hover.png" alt="Język">
-        </figure>
-        <div></div>
-    </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://www.en.easygifts.com.pl/" title="EN">EN</a></li>
-                                    <li><a href="https://www.ru.easygifts.com.pl/" title="RU">RU</a></li>
-                                </ul>
-                            </li>
-                            <li class="login_apla_relative">
-
-                                <a class="btn-signin">
-                            <figure>
-                                <img class="state1" src="/img/nav/ico_signin-new.png">
-                                <img class="state2" src="/img/nav/ico_signin_hover-new.png">
-                            </figure>
-                            <div>
-                                <span id="top-login">Konto</span> | <span id="top-logout">Wyloguj</span>                            </div>
-                        </a>
-                                <div class="login_apla">
-                                    <div class="name">Jan Kowalski</div>
-                                    <a id="profile">
-                                        <img src="/img/icons/profile/profilePanel/login1.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">Profil</p>
-                                    </a>
-                                    <a id="orders"> <img src="/img/icons/profile/profilePanel/login2.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">Zamówienia</p>
-                                    </a>
-                                    <a id="offers"> <img src="/img/icons/profile/profilePanel/login3.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">Oferty</p>
-                                    </a>
-                                    <a id="download"> <img src="/img/icons/profile/profilePanel/login4.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">Do pobrania</p>
-                                    </a>
-                                    <a id="api"> <img src="/img/icons/profile/profilePanel/login5.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">WEB API</p>
-                                    </a>
-                                    <a id="shop"> <img src="/img/icons/profile/profilePanel/login6.png" alt=""
-                                            class="profile_icon">
-                                        <p class="profile_text">Sklep NO-NAME</p>
-                                    </a>
-                                    <div class="line"></div>
-                                    <a href="logged_out.html">
-                                    <button id="logout_button">Wyloguj się</button></a>
-                                </div>
-                            </li>
-
-                            <li class="">
-                                <a class="btn-cart" href="/shopcart.php">
-        <figure>
-            <img class="state1" src="/img/nav/ico_cart-new.png" alt="Koszyk">
-            <img class="state2" src="/img/nav/ico_cart_hover-new.png" alt="Koszyk">
-            <span id="cart-quantity" class="badge badge-primary">0</span>
-        </figure>
-        <div>
-                    </div>
-            </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <div class="logo-mobile hidden-sm hidden-md hidden-lg">
-                            <a href="https://www.easygifts.com.pl" title="PCM Sp. z o.o. EASY GIFTS Sp.k.">
-                        <img class="img-responsive" src="/img/logo/easygifts_logo.png" alt="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo">
-                    </a>
-                        </div>
-
-                        <button type="button" class="mobile-menu navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-
-
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="20" href="javascript:void('toggle');">Oferta</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="javascript:void('toggle');" class="dropdown-toggle" data-toggle="dropdown">Oferta</a>
-
-
-
-                                <ul class="dropdown-menu submenu1">
-
-
-
-
-
-
-
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/oferta/oferta-podstawowa/" title="Oferta podstawowa">
-                                                                <strong>Oferta podstawowa</strong>
-                                                            </a>
-                                    </li>
-
-
-
-
-
-
-
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/oferta/oferta-markowa/" title="Oferta markowa">
-                                                                <strong>Oferta markowa</strong>
-                                                            </a>
-                                    </li>
-
-
-
-
-
-
-                                    <li><a href="https://www.easygifts.com.pl/search.php?dosearch=1&adv=1&new=1&perpage=15&allcolors=2" title="Nowości">Nowości</a>
-                                    </li>
-
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/oferta/oferta-importowa/" title="Oferta importowa">
-                                                                Oferta importowa                                                            </a>
-                                    </li>
-
-
-                                    <li><a href="https://www.easygifts.com.pl/promocje/" title="Promocje">Promocje</a>
-                                    </li>
-                                    <li><a href="https://www.easygifts.com.pl/usb-configurator/" title="Konfigurator USB">Konfigurator USB</a>
-                                    </li>
-
-                                </ul>
-
-
-                            </li>
-
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="93" href="https://www.easygifts.com.pl/import/">IMPORT</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="https://www.easygifts.com.pl/import/" class="dropdown-toggle" data-toggle="dropdown">IMPORT</a>
-
-
-
-                            </li>
-
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="27" href="javascript:void('toggle')">Katalogi</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="javascript:void('toggle')" class="dropdown-toggle" data-toggle="dropdown">Katalogi</a>
-
-
-                                <ul class="dropdown-menu submenu1">
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/katalogi/katalogi-easy-gifts/">
-                                                                <span>Katalogi Easy Gifts</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/katalogi/video/">
-                                                                <span>Video</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/katalogi/newslettery/">
-                                                                <span>Newslettery</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/katalogi/ulotki-broszury/">
-                                                                <span>Ulotki, broszury</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/katalogi/landing-pages/">
-                                                                <span>Landing Pages</span>
-                                                            </a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="3" href="javascript:void('toggle')">Znakowanie</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="javascript:void('toggle')" class="dropdown-toggle" data-toggle="dropdown">Znakowanie</a>
-
-
-                                <ul class="dropdown-menu submenu1">
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/terminy-znakowan/">
-                                                                <span>Terminy znakowań</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/dtf/">
-                                                                <span>DTF</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/dtg/">
-                                                                <span>DTG</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/doming/">
-                                                                <span>Doming</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/druk-uv/">
-                                                                <span>Druk UV</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/etykiety-naklejki/">
-                                                                <span>Etykiety-naklejki</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/grawerowanie/">
-                                                                <span>Grawerowanie</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/haft-komputerowy/">
-                                                                <span>Haft komputerowy</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/kalka-ceramiczna/">
-                                                                <span>Kalka ceramiczna</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/sitodruk/">
-                                                                <span>Sitodruk</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/sublimacja/">
-                                                                <span>Sublimacja</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/tampodruk/">
-                                                                <span>Tampodruk</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/termotransfer/">
-                                                                <span>Termotransfer</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/znakowanie/tloczenie/">
-                                                                <span>Tłoczenie</span>
-                                                            </a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="4" href="javascript:void('toggle')">Dla agencji</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="javascript:void('toggle')" class="dropdown-toggle" data-toggle="dropdown">Dla agencji</a>
-
-
-                                <ul class="dropdown-menu submenu1">
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/do-pobrania/">
-                                                                <span>Do pobrania</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/negocjator/">
-                                                                <span>Negocjator</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/webapi/">
-                                                                <span>Webapi</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/zamow-katalogi/">
-                                                                <span>Zamów katalogi</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/newsletter/">
-                                                                <span>Newsletter</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/warunki-wspolpracy/">
-                                                                <span>Warunki współpracy</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/dla-agencji/polityka-prywatnosci/">
-                                                                <span>Polityka prywatności</span>
-                                                            </a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
-
-
-
-
-
-
-
-
-
-
-                            <li class="submenus nodrop hidden-xs">
-                                <a class="fixed-menu-trigger" data-menu="19" href="javascript:void('toggle')">Kontakt</a>
-                            </li>
-
-                            <li class="submenus visible-xs">
-                                <a href="javascript:void('toggle')" class="dropdown-toggle" data-toggle="dropdown">Kontakt</a>
-
-
-                                <ul class="dropdown-menu submenu1">
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/kontakt/kontakt-do-dzialow/">
-                                                                <span>Kontakt do działów</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/kontakt/dane-teleadresowe/">
-                                                                <span>Dane teleadresowe</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/kontakt/formularz-kontaktowy/">
-                                                                <span>Formularz kontaktowy</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/kontakt/o-nas/">
-                                                                <span>O nas</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="https://www.easygifts.com.pl/kontakt/drukarnia-i-magazyn/">
-                                                                <span>Drukarnia i Magazyn</span>
-                                                            </a>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="/faq/">
-                                                                <span>FAQ</span>
-                                                            </a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
-
-
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </nav>
-    <main class="profileContainer">
-        <section class="menuWrapper" id="menuWrapper">
-            <div class="menuTitleWrapper" id="menuSwiper">
-                <div class="menuTitle">MENU</div><img class="swipeArrow" src="/img/icons/profile/arrow.png" alt="">
-            </div>
-            <div class="categories">
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput"  />
-                    <a class="category" href="/index.html">
-                        <div class="left"></div>
-                        <div class="profileIcon icon"></div>
-                        <p class="categoryText">Profil</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/your_data.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Twoje dane</p>
-                        <div class="right"></div>
-                    </a>
-                </label> <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/newsletter.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Newsletter</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/dev_program.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Program Rozwoju</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/orders.html">
-                        <div class="left"></div>
-                        <div class="paymentIcon icon"></div>
-                        <p class="categoryText">Zamówienia</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/orders.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Zamówienia</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/invoices.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">FV i listy przewozowe</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" checked="checked"/>
-                    <a class="category" href="/adresses.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Adresy dostaw</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/visualizations.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Wizualizacje</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/logos.html" >
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Logotypy</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/offers.html">
-                        <div class="left"></div>
-                        <div class="offersIcon icon"></div>
-                        <p class="categoryText">Oferty</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/offers.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Oferty</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/calculations.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Kalkulacje</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="negotiations.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Negocjacje</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" >
-                        <div class="left"></div>
-                        <div class="documentsIcon icon"></div>
-                        <p class="categoryText">Do pobrania</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="pricelist.html">
-                        <p class="innerCategoryText">Cenniki</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="catalogues.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Katalogi</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/newslettery.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Newslettery</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category " href="/videos.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Video</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/marketing.html">
-                        <div class="left"></div>
-                        <p class="innerCategoryText">Materiały marketingowe</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="/webapi.html">
-                        <div class="left"></div>
-                        <div class="apiIcon"></div>
-                        <p class="categoryText">Web API</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <label class="mainCategory big">
-                    <input type="radio" name="cat" class="radioInput" />
-                    <a class="category" href="">
-                        <div class="left"></div>
-                        <div class="cartIcon" id="cartIcon"></div>
-                        <p class="categoryText">Sklep No-Name</p>
-                        <div class="right"></div>
-                    </a>
-                </label>
-                <button class="logOutButton">Wyloguj się</button>
-            </div>
-        </section>
-        <section class="data">
-            <div class="welcome">
-                <h2 class="welcomeText">Witaj w Panelu Klienta</h2>
-            </div>
-            <div class="data_wrapper">
-                <div class="data_title">
-                    <div class="icon"></div>
-                    <p class="title_adresses">TWOJE ADRESY DOSTAW</p>
-                    <p class="neccessary">Pola oznaczone * są wymagane.</p>
-                </div>
-                <div class="data_wrapper_adresses">
-                    <div class="adress_item">
-                        <div class="adress_item_data">
-                            <p class="title">Adres</p>
-                            <p class="company">Firma 1 </p>
-                            <p class="adress_line first_line">Krakowska, 4c/14</p>
-                            <p class="adress_line second_line">35-582 Kraków</p>
-                            <p class="name">Mirosław Kozłowski</p>
-                            <p class="number">657 557 2526</p>
-                            <div class="default">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M13 8L9 12L7 10M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                                        stroke="#E6007E" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="default_adress">Domyślny adres odbiorcy</p>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="bottom_bar">
-                            <svg id="adress_edit" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                                viewBox="0 0 19 19" fill="none">
-                                <path
-                                    d="M10.7879 3.28282L14.9091 7.48773M9.75758 18H18M1 17.4744L1.51515 12.7439L12.4217 1.61579C13.2264 0.794735 14.5311 0.794735 15.3359 1.61579L16.5429 2.84739C17.3477 3.66844 17.3476 4.99964 16.5429 5.8207L5.63636 16.9488L1 17.4744Z"
-                                    stroke="#34224F" stroke-width="1.2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <svg id="adress_delete" xmlns="http://www.w3.org/2000/svg" width="15" height="17"
-                                viewBox="0 0 15 17" fill="none">
-                                <path
-                                    d="M4.61538 6.23333C4.76839 6.23333 4.91514 6.29304 5.02333 6.39931C5.13153 6.50558 5.19231 6.64971 5.19231 6.8V13.6C5.19231 13.7503 5.13153 13.8944 5.02333 14.0007C4.91514 14.107 4.76839 14.1667 4.61538 14.1667C4.46238 14.1667 4.31563 14.107 4.20744 14.0007C4.09924 13.8944 4.03846 13.7503 4.03846 13.6V6.8C4.03846 6.64971 4.09924 6.50558 4.20744 6.39931C4.31563 6.29304 4.46238 6.23333 4.61538 6.23333ZM7.5 6.23333C7.65301 6.23333 7.79975 6.29304 7.90795 6.39931C8.01614 6.50558 8.07692 6.64971 8.07692 6.8V13.6C8.07692 13.7503 8.01614 13.8944 7.90795 14.0007C7.79975 14.107 7.65301 14.1667 7.5 14.1667C7.34699 14.1667 7.20025 14.107 7.09205 14.0007C6.98386 13.8944 6.92308 13.7503 6.92308 13.6V6.8C6.92308 6.64971 6.98386 6.50558 7.09205 6.39931C7.20025 6.29304 7.34699 6.23333 7.5 6.23333ZM10.9615 6.8C10.9615 6.64971 10.9008 6.50558 10.7926 6.39931C10.6844 6.29304 10.5376 6.23333 10.3846 6.23333C10.2316 6.23333 10.0849 6.29304 9.97667 6.39931C9.86847 6.50558 9.80769 6.64971 9.80769 6.8V13.6C9.80769 13.7503 9.86847 13.8944 9.97667 14.0007C10.0849 14.107 10.2316 14.1667 10.3846 14.1667C10.5376 14.1667 10.6844 14.107 10.7926 14.0007C10.9008 13.8944 10.9615 13.7503 10.9615 13.6V6.8Z"
-                                    fill="#34224F" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15 3.4C15 3.70058 14.8784 3.98885 14.662 4.20139C14.4457 4.41393 14.1522 4.53333 13.8462 4.53333H13.2692V14.7333C13.2692 15.3345 13.0261 15.911 12.5933 16.3361C12.1605 16.7612 11.5736 17 10.9615 17H4.03846C3.42642 17 2.83945 16.7612 2.40668 16.3361C1.9739 15.911 1.73077 15.3345 1.73077 14.7333V4.53333H1.15385C0.847827 4.53333 0.554342 4.41393 0.337954 4.20139C0.121566 3.98885 0 3.70058 0 3.4V2.26667C0 1.96609 0.121566 1.67782 0.337954 1.46528C0.554342 1.25274 0.847827 1.13333 1.15385 1.13333H5.19231C5.19231 0.832755 5.31387 0.544487 5.53026 0.331946C5.74665 0.119404 6.04013 0 6.34615 0H8.65385C8.95987 0 9.25335 0.119404 9.46974 0.331946C9.68613 0.544487 9.80769 0.832755 9.80769 1.13333H13.8462C14.1522 1.13333 14.4457 1.25274 14.662 1.46528C14.8784 1.67782 15 1.96609 15 2.26667V3.4ZM3.02077 4.53333L2.88462 4.6002V14.7333C2.88462 15.0339 3.00618 15.3222 3.22257 15.5347C3.43896 15.7473 3.73244 15.8667 4.03846 15.8667H10.9615C11.2676 15.8667 11.561 15.7473 11.7774 15.5347C11.9938 15.3222 12.1154 15.0339 12.1154 14.7333V4.6002L11.9792 4.53333H3.02077ZM1.15385 3.4V2.26667H13.8462V3.4H1.15385Z"
-                                    fill="#34224F" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="adress_item">
-                        <div class="adress_item_data">
-                            <p class="title">Adres</p>
-                            <p class="company">Firma 1 </p>
-                            <p class="adress_line first_line">Krakowska, 4c/14</p>
-                            <p class="adress_line second_line">35-582 Kraków</p>
-                            <p class="name">Mirosław Kozłowski</p>
-                            <p class="number">657 557 2526</p>
-                            <div class="default not_default">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M13 8L9 12L7 10M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                                        stroke="#E6007E" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="default_adress ">Domyślny adres odbiorcy</p>
-                            </div>
-                        </div>
-                        <div class="line"></div>
-                        <div class="bottom_bar">
-                            <svg id="adress_edit" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                                viewBox="0 0 19 19" fill="none">
-                                <path
-                                    d="M10.7879 3.28282L14.9091 7.48773M9.75758 18H18M1 17.4744L1.51515 12.7439L12.4217 1.61579C13.2264 0.794735 14.5311 0.794735 15.3359 1.61579L16.5429 2.84739C17.3477 3.66844 17.3476 4.99964 16.5429 5.8207L5.63636 16.9488L1 17.4744Z"
-                                    stroke="#34224F" stroke-width="1.2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <svg id="adress_delete" xmlns="http://www.w3.org/2000/svg" width="15" height="17"
-                                viewBox="0 0 15 17" fill="none">
-                                <path
-                                    d="M4.61538 6.23333C4.76839 6.23333 4.91514 6.29304 5.02333 6.39931C5.13153 6.50558 5.19231 6.64971 5.19231 6.8V13.6C5.19231 13.7503 5.13153 13.8944 5.02333 14.0007C4.91514 14.107 4.76839 14.1667 4.61538 14.1667C4.46238 14.1667 4.31563 14.107 4.20744 14.0007C4.09924 13.8944 4.03846 13.7503 4.03846 13.6V6.8C4.03846 6.64971 4.09924 6.50558 4.20744 6.39931C4.31563 6.29304 4.46238 6.23333 4.61538 6.23333ZM7.5 6.23333C7.65301 6.23333 7.79975 6.29304 7.90795 6.39931C8.01614 6.50558 8.07692 6.64971 8.07692 6.8V13.6C8.07692 13.7503 8.01614 13.8944 7.90795 14.0007C7.79975 14.107 7.65301 14.1667 7.5 14.1667C7.34699 14.1667 7.20025 14.107 7.09205 14.0007C6.98386 13.8944 6.92308 13.7503 6.92308 13.6V6.8C6.92308 6.64971 6.98386 6.50558 7.09205 6.39931C7.20025 6.29304 7.34699 6.23333 7.5 6.23333ZM10.9615 6.8C10.9615 6.64971 10.9008 6.50558 10.7926 6.39931C10.6844 6.29304 10.5376 6.23333 10.3846 6.23333C10.2316 6.23333 10.0849 6.29304 9.97667 6.39931C9.86847 6.50558 9.80769 6.64971 9.80769 6.8V13.6C9.80769 13.7503 9.86847 13.8944 9.97667 14.0007C10.0849 14.107 10.2316 14.1667 10.3846 14.1667C10.5376 14.1667 10.6844 14.107 10.7926 14.0007C10.9008 13.8944 10.9615 13.7503 10.9615 13.6V6.8Z"
-                                    fill="#34224F" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15 3.4C15 3.70058 14.8784 3.98885 14.662 4.20139C14.4457 4.41393 14.1522 4.53333 13.8462 4.53333H13.2692V14.7333C13.2692 15.3345 13.0261 15.911 12.5933 16.3361C12.1605 16.7612 11.5736 17 10.9615 17H4.03846C3.42642 17 2.83945 16.7612 2.40668 16.3361C1.9739 15.911 1.73077 15.3345 1.73077 14.7333V4.53333H1.15385C0.847827 4.53333 0.554342 4.41393 0.337954 4.20139C0.121566 3.98885 0 3.70058 0 3.4V2.26667C0 1.96609 0.121566 1.67782 0.337954 1.46528C0.554342 1.25274 0.847827 1.13333 1.15385 1.13333H5.19231C5.19231 0.832755 5.31387 0.544487 5.53026 0.331946C5.74665 0.119404 6.04013 0 6.34615 0H8.65385C8.95987 0 9.25335 0.119404 9.46974 0.331946C9.68613 0.544487 9.80769 0.832755 9.80769 1.13333H13.8462C14.1522 1.13333 14.4457 1.25274 14.662 1.46528C14.8784 1.67782 15 1.96609 15 2.26667V3.4ZM3.02077 4.53333L2.88462 4.6002V14.7333C2.88462 15.0339 3.00618 15.3222 3.22257 15.5347C3.43896 15.7473 3.73244 15.8667 4.03846 15.8667H10.9615C11.2676 15.8667 11.561 15.7473 11.7774 15.5347C11.9938 15.3222 12.1154 15.0339 12.1154 14.7333V4.6002L11.9792 4.53333H3.02077ZM1.15385 3.4V2.26667H13.8462V3.4H1.15385Z"
-                                    fill="#34224F" />
-                            </svg>
-                        </div>
-                    </div>
-                    <button class="adress_item" id="adress_item_add">
-                        <div class="adress_item_add">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                fill="none">
-                                <path
-                                    d="M1 7V18C1 18.5523 1.44772 19 2 19H13M12 11V5M9 8H15M18 15L6 15C5.44771 15 5 14.5523 5 14V2C5 1.44772 5.44771 1 6 1L18 1C18.5523 1 19 1.44772 19 2V14C19 14.5523 18.5523 15 18 15Z"
-                                    stroke="#E6007E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <p class="add_adress">Dodaj Adres</p>
-                        </div>
-                    </button>
-                </div>
-            </div>
-
-        </section>
-    </main>
-    <div id="adress_add_modal">
-        <form class="add_modal_wrapper">
-            <div class="data_title">
-                <div class="icon"></div>
-                <p class="title">DODAJ ADRES DOSTAWY</p>
-                <p class="neccessary">Pola oznaczone * są wymagane.</p>
-            </div>
-            <div class="data_wrapper--inner">
-                <div class="data_item">
-                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
-                        value="Ulica 44">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
-                        value="Mirosław Kozłowski">
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="add_bottom">
-                <div class="is_default">
-                    <input type="checkbox" name="default" id="is_default" checked="checked" />
-                    <label for="default">Domyślny adres dostawy</label>
-                </div>
-                <button class="save" type="submit">Zapisz</button>
-            </div>
-        </form>
-    </div>
-    <div id="adress_edit_modal">
-        <div class="edit_modal_wrapper">
-            <div class="data_title">
-                <div class="icon"></div>
-                <p class="title">EDYTUJ ADRES DOSTAWY</p>
-                <p class="neccessary">Pola oznaczone * są wymagane.</p>
-            </div>
-            <div class="data_wrapper--inner">
-                <div class="data_item">
-                    <p class="subtitle">Nazwa firmy *</p><input type="text" class="input company" value="Firma 1">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Ulica, nr domu lub mieszkania *</p><input type="text" class="input adress"
-                        value="Ulica 44">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Kod pocztowy *</p><input type="text" class="input code" value="33-547">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Miasto *</p><input type="text" class="input city" value="Kraków">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Tel *</p><input type="text" class="input phone" value="657 557 2526">
-                </div>
-                <div class="data_item">
-                    <p class="subtitle">Osoba kontaktowa *</p><input type="text" class="input contact"
-                        value="Mirosław Kozłowski">
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="add_bottom">
-                <div class="is_default">
-                    <input type="checkbox" name="default" id="is_def" />
-                    <label for="default">Domyślny adres dostawy</label>
-                </div>
-                <button class="save" id="editButton">Zapisz</button>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-outline">
-            <div class="container">
-                <section class="contact">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="box">
-                                <figure><img src="/img/footer/ico_phone3.png" alt="Tel."></figure>
-                                <p><a href="tel:71 330 51 11">71 330 51 11</a></p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="box">
-                                <figure><img src="/img/footer/ico_map.png" alt="Mapa"></figure>
-                                <p>ul. Wrocławska 41 Byków</p>
-                                <p>55-095 Mirków</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="box">
-                                <figure><img src="/img/footer/ico_mail.png" alt="E-mail"></figure>
-                                <p><a href="mailto:biuro@easygifts.pl">biuro@easygifts.pl</a></p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="box socials">
-                                <figure>
-                                    <a rel="nofollow" href="https://www.facebook.com/easygiftsPL" class="facebook"><span>Facebook</span></a>
-                                </figure>
-                                <figure>
-                                    <a rel="nofollow" href="https://pl.linkedin.com/company/pcm-sp-z-o-o-easy-gifts-sp-k" class="linkedin"><span>LinkedIn</span></a>
-                                </figure>
-                                <figure>
-                                    <a rel="nofollow" href="https://www.instagram.com/easygifts_pl/" class="instagram"><span>Instagram</span></a>
-                                </figure>
-                                <figure>
-                                    <a rel="nofollow" href="https://www.youtube.com/channel/UCURX54kJgWNGEKgVvYczPHw" class="youtube"><span>Youtube</span></a>
-                                </figure>
-                                <figure>
-                                    <a rel="nofollow" href="https://pl.pinterest.com/EasyGiftsPoland/_created/" class="pinterest"><span>Pinterest</span></a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <section class="bottom-menu">
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4>Strona główna</h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/strona-glowna/" title="Strona główna">Strona główna</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/oferta/" title="Oferta">Oferta</a></li>
-                            <li><a href="https://www.easygifts.com.pl/import/" title="IMPORT">IMPORT</a></li>
-                            <li><a href="/katalogi/" title="Katalogi">Katalogi</a></li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/" title="Nasze marki">Nasze marki</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/" title="Znakowanie">Znakowanie</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/" title="Dla agencji">Dla agencji</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/kontakt/" title="Kontakt">Kontakt</a></li>
-                            <li><a href="https://www.easygifts.com.pl/profil/" title="Profil">Profil</a></li>
-                            <li><a href="https://www.easygifts.com.pl/o-firmie/" title="O firmie">O firmie</a></li>
-                            <li><a href="https://www.easygifts.com.pl/kontakt/o-nas/" title="O nas">O nas</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4>Oferta</h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/oferta/oferta-podstawowa/" title="Oferta podstawowa">Oferta podstawowa</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/oferta/oferta-markowa/" title="Oferta markowa">Oferta markowa</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/oferta/oferta-importowa/" title="Oferta importowa">Oferta importowa</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/oferta/wyprzedaze/" title="Wyprzedaże">Wyprzedaże</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/oferta/popularne/" title="Popularne">Popularne</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4>Katalogi</h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/katalogi/katalogi-easy-gifts/" title="Katalogi Easy Gifts">Katalogi Easy Gifts</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/katalogi/video/" title="Video">Video</a></li>
-                            <li><a href="https://www.easygifts.com.pl/katalogi/newslettery/" title="Newslettery">Newslettery</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/katalogi/ulotki-broszury/" title="Ulotki, broszury">Ulotki, broszury</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/katalogi/landing-pages/" title="Landing Pages">Landing Pages</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4><a href="https://www.easygifts.com.pl/nasze-marki/">Nasze marki</a></h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/silicon-power/" title="Silicon Power">Silicon Power</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/victorinox/" title="Victorinox">Victorinox</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/wenger/" title="Wenger">Wenger</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/schwarzwolf/" title="Schwarzwolf">Schwarzwolf</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/pierre-cardin/" title="Pierre Cardin">Pierre Cardin</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/nasze-marki/denver/" title="Denver">Denver</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4>Znakowanie</h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/terminy-znakowan/" title="Terminy znakowań">Terminy znakowań</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/dtf/" title="DTF">DTF</a></li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/dtg/" title="DTG">DTG</a></li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/doming/" title="Doming">Doming</a></li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/druk-uv/" title="Druk UV">Druk UV</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/etykiety-naklejki/" title="Etykiety-naklejki">Etykiety-naklejki</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/grawerowanie/" title="Grawerowanie">Grawerowanie</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/haft-komputerowy/" title="Haft komputerowy">Haft komputerowy</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/kalka-ceramiczna/" title="Kalka ceramiczna">Kalka ceramiczna</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/sitodruk/" title="Sitodruk">Sitodruk</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/sublimacja/" title="Sublimacja">Sublimacja</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/tampodruk/" title="Tampodruk">Tampodruk</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/termotransfer/" title="Termotransfer">Termotransfer</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/znakowanie/tloczenie/" title="Tłoczenie">Tłoczenie</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="onecol col-lg-2 col-xs-6">
-                        <h4>Dla agencji</h4>
-                        <ul class="bottom-menu-ul">
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/do-pobrania/" title="Do pobrania">Do pobrania</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/negocjator/" title="Negocjator">Negocjator</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/webapi/" title="Webapi">Webapi</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/zamow-katalogi/" title="Zamów katalogi">Zamów katalogi</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/newsletter/" title="Newsletter">Newsletter</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/warunki-wspolpracy/" title="Warunki współpracy">Warunki współpracy</a>
-                            </li>
-                            <li><a href="https://www.easygifts.com.pl/dla-agencji/polityka-prywatnosci/" title="Polityka prywatności">Polityka prywatności</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div class="footer-newsletter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div id="footer-newsletter" class="row">
-                                <div class="title col-xs-12">
-                                    <h5>Bądź na bieżąco!</h5>
-                                </div>
-                                <div class="col-xs-12">
-                                    Aby otrzymywać aktualizacje i oferty specjalne, dołącz do naszej listy mailingowej.
-                                </div>
-                                <div class="col-xs-12 newsletter">
-                                    <form class="clearfix row" action="/newsletter.php?lang=pl" method="post">
-                                        <div class="col-lg-4 col-lg-offset-4 col-xs-12">
-                                            <input type="text" name="email" maxlength="64" placeholder="Adres e-mail *"
-                                                class="email">
-                                            <input type="text" name="email2" maxlength="64" placeholder="Adres e-mail *"
-                                                class="newsletter-email">
-                                            <input type="text" name="nip" maxlength="16" placeholder="NIP *"
-                                                class="newsletter-nip">
-                                            <input type="hidden" name="newsletter-send" value="1">
-                                            <input type="submit" class="btn btn-primary newsletter-send"
-                                                value="Wyślij" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyright text-center">
-                <p>All rights reserved. Copyright by PCM Sp. z o.o. EASY GIFTS Sp.k. 2016 - 2023.</p>
-                <p>Realizacja <a class="contip" href="https://contip.net" title="Contip.net"></a></p>
-            </div>
-
-        </section>
-    </footer>
-    <div id="toTop">Back to Top</div>
-    <div id="overlay" class="modal-backdrop fade hidden"></div>
-    <script src="/js/easygifts_libraries.min.js"></script>
-    <script src="/js/easygifts_scripts.js"></script>
-    <script src="/js/bootbox.min.js"></script>
-    <script src="/js/profile/main.js"></script>
-    <script src="/js/profile/adresses.js"></script>
-
-
-</body>
-
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			Twoje adresy dostaw - Gadżety reklamowe - PCM Sp. z o.o. EASY GIFTS Sp.k.
+		</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,latin-ext"
+			rel="stylesheet"
+		/>
+		<link href="/css/easygifts.css?v=1694599303" rel="stylesheet" />
+		<link href="/css/menu.css?v=1688889211" rel="stylesheet" />
+		<link href="/css/profile.css?v=1645177719" rel="stylesheet" />
+		<link href="/css/extras.css?v=1690473256" rel="stylesheet" />
+		<link href="/scss/main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav id="main-nav" class="navbar navbar-fixed-top">
+			<div class="top-menu">
+				<div class="container">
+					<div class="inner">
+						<div class="logo hidden-xs">
+							<div>
+								<a
+									href="https://www.easygifts.com.pl"
+									title="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo"
+								>
+									<img
+										class="img-responsive"
+										src="/img/logo/easygifts_logo_new.jpg"
+										alt="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="search">
+							<form class="form-search" method="get" action="/search.php">
+								<div class="dc-input border-all">
+									<input type="hidden" name="dosearch" value="1" />
+									<input
+										type="text"
+										name="query"
+										value=""
+										placeholder="Szukaj"
+										aria-label="Szukaj"
+									/>
+									<button class="btn btn-search">
+										<i class="icon-search"></i>
+									</button>
+								</div>
+								<a href="/search.php?adv=1" title="Wyszukiwarka zaawansowana"
+									>Wyszukiwarka zaawansowana</a
+								>
+							</form>
+						</div>
+						<div class="access">
+							<ul class="access-list">
+								<li class="dropdown">
+									<a
+										href="javascript:void('change-language');"
+										class="dropdown-toggle btn-lang"
+										data-toggle="dropdown"
+										role="button"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										<figure>
+											<img src="/img/nav/flag_pl-new.png" alt="PL" />
+											<img
+												class="arrow state1"
+												src="/img/global/arrow_dropdow_bottom.png"
+												alt="Język"
+											/>
+											<img
+												class="arrow state2"
+												src="/img/global/arrow_dropdow_bottom_hover.png"
+												alt="Język"
+											/>
+										</figure>
+										<div></div>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="https://www.en.easygifts.com.pl/" title="EN"
+												>EN</a
+											>
+										</li>
+										<li>
+											<a href="https://www.ru.easygifts.com.pl/" title="RU"
+												>RU</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="login_apla_relative">
+									<a class="btn-signin">
+										<figure>
+											<img class="state1" src="/img/nav/ico_signin-new.png" />
+											<img
+												class="state2"
+												src="/img/nav/ico_signin_hover-new.png"
+											/>
+										</figure>
+										<div>
+											<span id="top-login">Konto</span> |
+											<span id="top-logout">Wyloguj</span>
+										</div>
+									</a>
+									<div class="login_apla">
+										<div class="name">Jan Kowalski</div>
+										<a id="profile">
+											<img
+												src="/img/icons/profile/profilePanel/login1.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">Profil</p>
+										</a>
+										<a id="orders">
+											<img
+												src="/img/icons/profile/profilePanel/login2.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">Zamówienia</p>
+										</a>
+										<a id="offers">
+											<img
+												src="/img/icons/profile/profilePanel/login3.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">Oferty</p>
+										</a>
+										<a id="download">
+											<img
+												src="/img/icons/profile/profilePanel/login4.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">Do pobrania</p>
+										</a>
+										<a id="api">
+											<img
+												src="/img/icons/profile/profilePanel/login5.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">WEB API</p>
+										</a>
+										<a id="shop">
+											<img
+												src="/img/icons/profile/profilePanel/login6.png"
+												alt=""
+												class="profile_icon"
+											/>
+											<p class="profile_text">Sklep NO-NAME</p>
+										</a>
+										<div class="line"></div>
+										<a href="logged_out.html">
+											<button id="logout_button">Wyloguj się</button></a
+										>
+									</div>
+								</li>
+
+								<li class="">
+									<a class="btn-cart" href="/shopcart.php">
+										<figure>
+											<img
+												class="state1"
+												src="/img/nav/ico_cart-new.png"
+												alt="Koszyk"
+											/>
+											<img
+												class="state2"
+												src="/img/nav/ico_cart_hover-new.png"
+												alt="Koszyk"
+											/>
+											<span id="cart-quantity" class="badge badge-primary"
+												>0</span
+											>
+										</figure>
+										<div></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-menu">
+				<div class="container">
+					<div class="row">
+						<div class="navbar-header">
+							<div class="logo-mobile hidden-sm hidden-md hidden-lg">
+								<a
+									href="https://www.easygifts.com.pl"
+									title="PCM Sp. z o.o. EASY GIFTS Sp.k."
+								>
+									<img
+										class="img-responsive"
+										src="/img/logo/easygifts_logo.png"
+										alt="PCM Sp. z o.o. EASY GIFTS Sp.k. Logo"
+									/>
+								</a>
+							</div>
+
+							<button
+								type="button"
+								class="mobile-menu navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#navbar"
+								aria-expanded="false"
+								aria-controls="navbar"
+							>
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="20"
+										href="javascript:void('toggle');"
+										>Oferta</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="javascript:void('toggle');"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>Oferta</a
+									>
+
+									<ul class="dropdown-menu submenu1">
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/oferta/oferta-podstawowa/"
+												title="Oferta podstawowa"
+											>
+												<strong>Oferta podstawowa</strong>
+											</a>
+										</li>
+
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/oferta/oferta-markowa/"
+												title="Oferta markowa"
+											>
+												<strong>Oferta markowa</strong>
+											</a>
+										</li>
+
+										<li>
+											<a
+												href="https://www.easygifts.com.pl/search.php?dosearch=1&adv=1&new=1&perpage=15&allcolors=2"
+												title="Nowości"
+												>Nowości</a
+											>
+										</li>
+
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/oferta/oferta-importowa/"
+												title="Oferta importowa"
+											>
+												Oferta importowa
+											</a>
+										</li>
+
+										<li>
+											<a
+												href="https://www.easygifts.com.pl/promocje/"
+												title="Promocje"
+												>Promocje</a
+											>
+										</li>
+										<li>
+											<a
+												href="https://www.easygifts.com.pl/usb-configurator/"
+												title="Konfigurator USB"
+												>Konfigurator USB</a
+											>
+										</li>
+									</ul>
+								</li>
+
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="93"
+										href="https://www.easygifts.com.pl/import/"
+										>IMPORT</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="https://www.easygifts.com.pl/import/"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>IMPORT</a
+									>
+								</li>
+
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="27"
+										href="javascript:void('toggle')"
+										>Katalogi</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="javascript:void('toggle')"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>Katalogi</a
+									>
+
+									<ul class="dropdown-menu submenu1">
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/katalogi/katalogi-easy-gifts/"
+											>
+												<span>Katalogi Easy Gifts</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="https://www.easygifts.com.pl/katalogi/video/">
+												<span>Video</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/katalogi/newslettery/"
+											>
+												<span>Newslettery</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/katalogi/ulotki-broszury/"
+											>
+												<span>Ulotki, broszury</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/katalogi/landing-pages/"
+											>
+												<span>Landing Pages</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="3"
+										href="javascript:void('toggle')"
+										>Znakowanie</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="javascript:void('toggle')"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>Znakowanie</a
+									>
+
+									<ul class="dropdown-menu submenu1">
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/terminy-znakowan/"
+											>
+												<span>Terminy znakowań</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="https://www.easygifts.com.pl/znakowanie/dtf/">
+												<span>DTF</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="https://www.easygifts.com.pl/znakowanie/dtg/">
+												<span>DTG</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="https://www.easygifts.com.pl/znakowanie/doming/">
+												<span>Doming</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/druk-uv/"
+											>
+												<span>Druk UV</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/etykiety-naklejki/"
+											>
+												<span>Etykiety-naklejki</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/grawerowanie/"
+											>
+												<span>Grawerowanie</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/haft-komputerowy/"
+											>
+												<span>Haft komputerowy</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/kalka-ceramiczna/"
+											>
+												<span>Kalka ceramiczna</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/sitodruk/"
+											>
+												<span>Sitodruk</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/sublimacja/"
+											>
+												<span>Sublimacja</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/tampodruk/"
+											>
+												<span>Tampodruk</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/termotransfer/"
+											>
+												<span>Termotransfer</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/znakowanie/tloczenie/"
+											>
+												<span>Tłoczenie</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="4"
+										href="javascript:void('toggle')"
+										>Dla agencji</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="javascript:void('toggle')"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>Dla agencji</a
+									>
+
+									<ul class="dropdown-menu submenu1">
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/do-pobrania/"
+											>
+												<span>Do pobrania</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/negocjator/"
+											>
+												<span>Negocjator</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/webapi/"
+											>
+												<span>Webapi</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/zamow-katalogi/"
+											>
+												<span>Zamów katalogi</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/newsletter/"
+											>
+												<span>Newsletter</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/warunki-wspolpracy/"
+											>
+												<span>Warunki współpracy</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/dla-agencji/polityka-prywatnosci/"
+											>
+												<span>Polityka prywatności</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="submenus nodrop hidden-xs">
+									<a
+										class="fixed-menu-trigger"
+										data-menu="19"
+										href="javascript:void('toggle')"
+										>Kontakt</a
+									>
+								</li>
+
+								<li class="submenus visible-xs">
+									<a
+										href="javascript:void('toggle')"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
+										>Kontakt</a
+									>
+
+									<ul class="dropdown-menu submenu1">
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/kontakt/kontakt-do-dzialow/"
+											>
+												<span>Kontakt do działów</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/kontakt/dane-teleadresowe/"
+											>
+												<span>Dane teleadresowe</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/kontakt/formularz-kontaktowy/"
+											>
+												<span>Formularz kontaktowy</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="https://www.easygifts.com.pl/kontakt/o-nas/">
+												<span>O nas</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a
+												href="https://www.easygifts.com.pl/kontakt/drukarnia-i-magazyn/"
+											>
+												<span>Drukarnia i Magazyn</span>
+											</a>
+										</li>
+										<li class="dropdown-submenu">
+											<a href="/faq/">
+												<span>FAQ</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main class="profileContainer">
+			<section class="menuWrapper" id="menuWrapper">
+				<div class="menuTitleWrapper" id="menuSwiper">
+					<div class="menuTitle">MENU</div>
+					<img class="swipeArrow" src="/img/icons/profile/arrow.png" alt="" />
+				</div>
+				<div class="categories">
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/index.html">
+							<div class="left"></div>
+							<div class="profileIcon icon"></div>
+							<p class="categoryText">Profil</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/your_data.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Twoje dane</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/newsletter.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Newsletter</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/dev_program.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Program Rozwoju</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/orders.html">
+							<div class="left"></div>
+							<div class="paymentIcon icon"></div>
+							<p class="categoryText">Zamówienia</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/orders.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Zamówienia</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/invoices.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">FV i listy przewozowe</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input
+							type="radio"
+							name="cat"
+							class="radioInput"
+							checked="checked"
+						/>
+						<a class="category" href="/adresses.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Adresy dostaw</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/visualizations.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Wizualizacje</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/logos.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Logotypy</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/offers.html">
+							<div class="left"></div>
+							<div class="offersIcon icon"></div>
+							<p class="categoryText">Oferty</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/offers.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Oferty handlowe</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/ofertownik.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Twój ofertownik</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/calculations.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Kalkulacje</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="negotiations.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Negocjacje</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category">
+							<div class="left"></div>
+							<div class="documentsIcon icon"></div>
+							<p class="categoryText">Do pobrania</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="pricelist.html">
+							<p class="innerCategoryText">Cenniki</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="catalogues.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Katalogi</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/newslettery.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Newslettery</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/videos.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Video</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/marketing.html">
+							<div class="left"></div>
+							<p class="innerCategoryText">Materiały marketingowe</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="/webapi.html">
+							<div class="left"></div>
+							<div class="apiIcon"></div>
+							<p class="categoryText">Web API</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<label class="mainCategory big">
+						<input type="radio" name="cat" class="radioInput" />
+						<a class="category" href="">
+							<div class="left"></div>
+							<div class="cartIcon" id="cartIcon"></div>
+							<p class="categoryText">Sklep No-Name</p>
+							<div class="right"></div>
+						</a>
+					</label>
+					<button class="logOutButton">Wyloguj się</button>
+				</div>
+			</section>
+			<section class="data">
+				<div class="welcome">
+					<h2 class="welcomeText">Witaj w Panelu Klienta</h2>
+				</div>
+				<div class="data_wrapper">
+					<div class="data_title">
+						<div class="icon"></div>
+						<p class="title_adresses">TWOJE ADRESY DOSTAW</p>
+						<p class="neccessary">Pola oznaczone * są wymagane.</p>
+					</div>
+					<div class="data_wrapper_adresses">
+						<div class="adress_item">
+							<div class="adress_item_data">
+								<p class="title">Adres</p>
+								<p class="company">Firma 1</p>
+								<p class="adress_line first_line">Krakowska, 4c/14</p>
+								<p class="adress_line second_line">35-582 Kraków</p>
+								<p class="name">Mirosław Kozłowski</p>
+								<p class="number">657 557 2526</p>
+								<div class="default">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<path
+											d="M13 8L9 12L7 10M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+											stroke="#E6007E"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									<p class="default_adress">Domyślny adres odbiorcy</p>
+								</div>
+							</div>
+							<div class="line"></div>
+							<div class="bottom_bar">
+								<svg
+									id="adress_edit"
+									xmlns="http://www.w3.org/2000/svg"
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+								>
+									<path
+										d="M10.7879 3.28282L14.9091 7.48773M9.75758 18H18M1 17.4744L1.51515 12.7439L12.4217 1.61579C13.2264 0.794735 14.5311 0.794735 15.3359 1.61579L16.5429 2.84739C17.3477 3.66844 17.3476 4.99964 16.5429 5.8207L5.63636 16.9488L1 17.4744Z"
+										stroke="#34224F"
+										stroke-width="1.2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								<svg
+									id="adress_delete"
+									xmlns="http://www.w3.org/2000/svg"
+									width="15"
+									height="17"
+									viewBox="0 0 15 17"
+									fill="none"
+								>
+									<path
+										d="M4.61538 6.23333C4.76839 6.23333 4.91514 6.29304 5.02333 6.39931C5.13153 6.50558 5.19231 6.64971 5.19231 6.8V13.6C5.19231 13.7503 5.13153 13.8944 5.02333 14.0007C4.91514 14.107 4.76839 14.1667 4.61538 14.1667C4.46238 14.1667 4.31563 14.107 4.20744 14.0007C4.09924 13.8944 4.03846 13.7503 4.03846 13.6V6.8C4.03846 6.64971 4.09924 6.50558 4.20744 6.39931C4.31563 6.29304 4.46238 6.23333 4.61538 6.23333ZM7.5 6.23333C7.65301 6.23333 7.79975 6.29304 7.90795 6.39931C8.01614 6.50558 8.07692 6.64971 8.07692 6.8V13.6C8.07692 13.7503 8.01614 13.8944 7.90795 14.0007C7.79975 14.107 7.65301 14.1667 7.5 14.1667C7.34699 14.1667 7.20025 14.107 7.09205 14.0007C6.98386 13.8944 6.92308 13.7503 6.92308 13.6V6.8C6.92308 6.64971 6.98386 6.50558 7.09205 6.39931C7.20025 6.29304 7.34699 6.23333 7.5 6.23333ZM10.9615 6.8C10.9615 6.64971 10.9008 6.50558 10.7926 6.39931C10.6844 6.29304 10.5376 6.23333 10.3846 6.23333C10.2316 6.23333 10.0849 6.29304 9.97667 6.39931C9.86847 6.50558 9.80769 6.64971 9.80769 6.8V13.6C9.80769 13.7503 9.86847 13.8944 9.97667 14.0007C10.0849 14.107 10.2316 14.1667 10.3846 14.1667C10.5376 14.1667 10.6844 14.107 10.7926 14.0007C10.9008 13.8944 10.9615 13.7503 10.9615 13.6V6.8Z"
+										fill="#34224F"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M15 3.4C15 3.70058 14.8784 3.98885 14.662 4.20139C14.4457 4.41393 14.1522 4.53333 13.8462 4.53333H13.2692V14.7333C13.2692 15.3345 13.0261 15.911 12.5933 16.3361C12.1605 16.7612 11.5736 17 10.9615 17H4.03846C3.42642 17 2.83945 16.7612 2.40668 16.3361C1.9739 15.911 1.73077 15.3345 1.73077 14.7333V4.53333H1.15385C0.847827 4.53333 0.554342 4.41393 0.337954 4.20139C0.121566 3.98885 0 3.70058 0 3.4V2.26667C0 1.96609 0.121566 1.67782 0.337954 1.46528C0.554342 1.25274 0.847827 1.13333 1.15385 1.13333H5.19231C5.19231 0.832755 5.31387 0.544487 5.53026 0.331946C5.74665 0.119404 6.04013 0 6.34615 0H8.65385C8.95987 0 9.25335 0.119404 9.46974 0.331946C9.68613 0.544487 9.80769 0.832755 9.80769 1.13333H13.8462C14.1522 1.13333 14.4457 1.25274 14.662 1.46528C14.8784 1.67782 15 1.96609 15 2.26667V3.4ZM3.02077 4.53333L2.88462 4.6002V14.7333C2.88462 15.0339 3.00618 15.3222 3.22257 15.5347C3.43896 15.7473 3.73244 15.8667 4.03846 15.8667H10.9615C11.2676 15.8667 11.561 15.7473 11.7774 15.5347C11.9938 15.3222 12.1154 15.0339 12.1154 14.7333V4.6002L11.9792 4.53333H3.02077ZM1.15385 3.4V2.26667H13.8462V3.4H1.15385Z"
+										fill="#34224F"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="adress_item">
+							<div class="adress_item_data">
+								<p class="title">Adres</p>
+								<p class="company">Firma 1</p>
+								<p class="adress_line first_line">Krakowska, 4c/14</p>
+								<p class="adress_line second_line">35-582 Kraków</p>
+								<p class="name">Mirosław Kozłowski</p>
+								<p class="number">657 557 2526</p>
+								<div class="default not_default">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<path
+											d="M13 8L9 12L7 10M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+											stroke="#E6007E"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									<p class="default_adress">Domyślny adres odbiorcy</p>
+								</div>
+							</div>
+							<div class="line"></div>
+							<div class="bottom_bar">
+								<svg
+									id="adress_edit"
+									xmlns="http://www.w3.org/2000/svg"
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+								>
+									<path
+										d="M10.7879 3.28282L14.9091 7.48773M9.75758 18H18M1 17.4744L1.51515 12.7439L12.4217 1.61579C13.2264 0.794735 14.5311 0.794735 15.3359 1.61579L16.5429 2.84739C17.3477 3.66844 17.3476 4.99964 16.5429 5.8207L5.63636 16.9488L1 17.4744Z"
+										stroke="#34224F"
+										stroke-width="1.2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								<svg
+									id="adress_delete"
+									xmlns="http://www.w3.org/2000/svg"
+									width="15"
+									height="17"
+									viewBox="0 0 15 17"
+									fill="none"
+								>
+									<path
+										d="M4.61538 6.23333C4.76839 6.23333 4.91514 6.29304 5.02333 6.39931C5.13153 6.50558 5.19231 6.64971 5.19231 6.8V13.6C5.19231 13.7503 5.13153 13.8944 5.02333 14.0007C4.91514 14.107 4.76839 14.1667 4.61538 14.1667C4.46238 14.1667 4.31563 14.107 4.20744 14.0007C4.09924 13.8944 4.03846 13.7503 4.03846 13.6V6.8C4.03846 6.64971 4.09924 6.50558 4.20744 6.39931C4.31563 6.29304 4.46238 6.23333 4.61538 6.23333ZM7.5 6.23333C7.65301 6.23333 7.79975 6.29304 7.90795 6.39931C8.01614 6.50558 8.07692 6.64971 8.07692 6.8V13.6C8.07692 13.7503 8.01614 13.8944 7.90795 14.0007C7.79975 14.107 7.65301 14.1667 7.5 14.1667C7.34699 14.1667 7.20025 14.107 7.09205 14.0007C6.98386 13.8944 6.92308 13.7503 6.92308 13.6V6.8C6.92308 6.64971 6.98386 6.50558 7.09205 6.39931C7.20025 6.29304 7.34699 6.23333 7.5 6.23333ZM10.9615 6.8C10.9615 6.64971 10.9008 6.50558 10.7926 6.39931C10.6844 6.29304 10.5376 6.23333 10.3846 6.23333C10.2316 6.23333 10.0849 6.29304 9.97667 6.39931C9.86847 6.50558 9.80769 6.64971 9.80769 6.8V13.6C9.80769 13.7503 9.86847 13.8944 9.97667 14.0007C10.0849 14.107 10.2316 14.1667 10.3846 14.1667C10.5376 14.1667 10.6844 14.107 10.7926 14.0007C10.9008 13.8944 10.9615 13.7503 10.9615 13.6V6.8Z"
+										fill="#34224F"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M15 3.4C15 3.70058 14.8784 3.98885 14.662 4.20139C14.4457 4.41393 14.1522 4.53333 13.8462 4.53333H13.2692V14.7333C13.2692 15.3345 13.0261 15.911 12.5933 16.3361C12.1605 16.7612 11.5736 17 10.9615 17H4.03846C3.42642 17 2.83945 16.7612 2.40668 16.3361C1.9739 15.911 1.73077 15.3345 1.73077 14.7333V4.53333H1.15385C0.847827 4.53333 0.554342 4.41393 0.337954 4.20139C0.121566 3.98885 0 3.70058 0 3.4V2.26667C0 1.96609 0.121566 1.67782 0.337954 1.46528C0.554342 1.25274 0.847827 1.13333 1.15385 1.13333H5.19231C5.19231 0.832755 5.31387 0.544487 5.53026 0.331946C5.74665 0.119404 6.04013 0 6.34615 0H8.65385C8.95987 0 9.25335 0.119404 9.46974 0.331946C9.68613 0.544487 9.80769 0.832755 9.80769 1.13333H13.8462C14.1522 1.13333 14.4457 1.25274 14.662 1.46528C14.8784 1.67782 15 1.96609 15 2.26667V3.4ZM3.02077 4.53333L2.88462 4.6002V14.7333C2.88462 15.0339 3.00618 15.3222 3.22257 15.5347C3.43896 15.7473 3.73244 15.8667 4.03846 15.8667H10.9615C11.2676 15.8667 11.561 15.7473 11.7774 15.5347C11.9938 15.3222 12.1154 15.0339 12.1154 14.7333V4.6002L11.9792 4.53333H3.02077ZM1.15385 3.4V2.26667H13.8462V3.4H1.15385Z"
+										fill="#34224F"
+									/>
+								</svg>
+							</div>
+						</div>
+						<button class="adress_item" id="adress_item_add">
+							<div class="adress_item_add">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M1 7V18C1 18.5523 1.44772 19 2 19H13M12 11V5M9 8H15M18 15L6 15C5.44771 15 5 14.5523 5 14V2C5 1.44772 5.44771 1 6 1L18 1C18.5523 1 19 1.44772 19 2V14C19 14.5523 18.5523 15 18 15Z"
+										stroke="#E6007E"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								<p class="add_adress">Dodaj Adres</p>
+							</div>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="adress_add_modal">
+			<form class="add_modal_wrapper">
+				<div class="data_title">
+					<div class="icon"></div>
+					<p class="title">DODAJ ADRES DOSTAWY</p>
+					<p class="neccessary">Pola oznaczone * są wymagane.</p>
+				</div>
+				<div class="data_wrapper--inner">
+					<div class="data_item">
+						<p class="subtitle">Nazwa firmy *</p>
+						<input type="text" class="input company" value="Firma 1" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Ulica, nr domu lub mieszkania *</p>
+						<input type="text" class="input adress" value="Ulica 44" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Kod pocztowy *</p>
+						<input type="text" class="input code" value="33-547" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Miasto *</p>
+						<input type="text" class="input city" value="Kraków" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Tel *</p>
+						<input type="text" class="input phone" value="657 557 2526" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Osoba kontaktowa *</p>
+						<input
+							type="text"
+							class="input contact"
+							value="Mirosław Kozłowski"
+						/>
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="add_bottom">
+					<div class="is_default">
+						<input
+							type="checkbox"
+							name="default"
+							id="is_default"
+							checked="checked"
+						/>
+						<label for="default">Domyślny adres dostawy</label>
+					</div>
+					<button class="save" type="submit">Zapisz</button>
+				</div>
+			</form>
+		</div>
+		<div id="adress_edit_modal">
+			<div class="edit_modal_wrapper">
+				<div class="data_title">
+					<div class="icon"></div>
+					<p class="title">EDYTUJ ADRES DOSTAWY</p>
+					<p class="neccessary">Pola oznaczone * są wymagane.</p>
+				</div>
+				<div class="data_wrapper--inner">
+					<div class="data_item">
+						<p class="subtitle">Nazwa firmy *</p>
+						<input type="text" class="input company" value="Firma 1" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Ulica, nr domu lub mieszkania *</p>
+						<input type="text" class="input adress" value="Ulica 44" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Kod pocztowy *</p>
+						<input type="text" class="input code" value="33-547" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Miasto *</p>
+						<input type="text" class="input city" value="Kraków" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Tel *</p>
+						<input type="text" class="input phone" value="657 557 2526" />
+					</div>
+					<div class="data_item">
+						<p class="subtitle">Osoba kontaktowa *</p>
+						<input
+							type="text"
+							class="input contact"
+							value="Mirosław Kozłowski"
+						/>
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="add_bottom">
+					<div class="is_default">
+						<input type="checkbox" name="default" id="is_def" />
+						<label for="default">Domyślny adres dostawy</label>
+					</div>
+					<button class="save" id="editButton">Zapisz</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-outline">
+				<div class="container">
+					<section class="contact">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="box">
+									<figure>
+										<img src="/img/footer/ico_phone3.png" alt="Tel." />
+									</figure>
+									<p><a href="tel:71 330 51 11">71 330 51 11</a></p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="box">
+									<figure>
+										<img src="/img/footer/ico_map.png" alt="Mapa" />
+									</figure>
+									<p>ul. Wrocławska 41 Byków</p>
+									<p>55-095 Mirków</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="box">
+									<figure>
+										<img src="/img/footer/ico_mail.png" alt="E-mail" />
+									</figure>
+									<p>
+										<a href="mailto:biuro@easygifts.pl">biuro@easygifts.pl</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<div class="box socials">
+									<figure>
+										<a
+											rel="nofollow"
+											href="https://www.facebook.com/easygiftsPL"
+											class="facebook"
+											><span>Facebook</span></a
+										>
+									</figure>
+									<figure>
+										<a
+											rel="nofollow"
+											href="https://pl.linkedin.com/company/pcm-sp-z-o-o-easy-gifts-sp-k"
+											class="linkedin"
+											><span>LinkedIn</span></a
+										>
+									</figure>
+									<figure>
+										<a
+											rel="nofollow"
+											href="https://www.instagram.com/easygifts_pl/"
+											class="instagram"
+											><span>Instagram</span></a
+										>
+									</figure>
+									<figure>
+										<a
+											rel="nofollow"
+											href="https://www.youtube.com/channel/UCURX54kJgWNGEKgVvYczPHw"
+											class="youtube"
+											><span>Youtube</span></a
+										>
+									</figure>
+									<figure>
+										<a
+											rel="nofollow"
+											href="https://pl.pinterest.com/EasyGiftsPoland/_created/"
+											class="pinterest"
+											><span>Pinterest</span></a
+										>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<section class="bottom-menu">
+				<div class="container">
+					<div class="row">
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>Strona główna</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/strona-glowna/"
+										title="Strona główna"
+										>Strona główna</a
+									>
+								</li>
+								<li>
+									<a href="https://www.easygifts.com.pl/oferta/" title="Oferta"
+										>Oferta</a
+									>
+								</li>
+								<li>
+									<a href="https://www.easygifts.com.pl/import/" title="IMPORT"
+										>IMPORT</a
+									>
+								</li>
+								<li><a href="/katalogi/" title="Katalogi">Katalogi</a></li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/"
+										title="Nasze marki"
+										>Nasze marki</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/"
+										title="Znakowanie"
+										>Znakowanie</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/"
+										title="Dla agencji"
+										>Dla agencji</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/kontakt/"
+										title="Kontakt"
+										>Kontakt</a
+									>
+								</li>
+								<li>
+									<a href="https://www.easygifts.com.pl/profil/" title="Profil"
+										>Profil</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/o-firmie/"
+										title="O firmie"
+										>O firmie</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/kontakt/o-nas/"
+										title="O nas"
+										>O nas</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>Oferta</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/oferta/oferta-podstawowa/"
+										title="Oferta podstawowa"
+										>Oferta podstawowa</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/oferta/oferta-markowa/"
+										title="Oferta markowa"
+										>Oferta markowa</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/oferta/oferta-importowa/"
+										title="Oferta importowa"
+										>Oferta importowa</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/oferta/wyprzedaze/"
+										title="Wyprzedaże"
+										>Wyprzedaże</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/oferta/popularne/"
+										title="Popularne"
+										>Popularne</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>Katalogi</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/katalogi/katalogi-easy-gifts/"
+										title="Katalogi Easy Gifts"
+										>Katalogi Easy Gifts</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/katalogi/video/"
+										title="Video"
+										>Video</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/katalogi/newslettery/"
+										title="Newslettery"
+										>Newslettery</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/katalogi/ulotki-broszury/"
+										title="Ulotki, broszury"
+										>Ulotki, broszury</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/katalogi/landing-pages/"
+										title="Landing Pages"
+										>Landing Pages</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>
+								<a href="https://www.easygifts.com.pl/nasze-marki/"
+									>Nasze marki</a
+								>
+							</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/silicon-power/"
+										title="Silicon Power"
+										>Silicon Power</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/victorinox/"
+										title="Victorinox"
+										>Victorinox</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/wenger/"
+										title="Wenger"
+										>Wenger</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/schwarzwolf/"
+										title="Schwarzwolf"
+										>Schwarzwolf</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/pierre-cardin/"
+										title="Pierre Cardin"
+										>Pierre Cardin</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/nasze-marki/denver/"
+										title="Denver"
+										>Denver</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>Znakowanie</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/terminy-znakowan/"
+										title="Terminy znakowań"
+										>Terminy znakowań</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/dtf/"
+										title="DTF"
+										>DTF</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/dtg/"
+										title="DTG"
+										>DTG</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/doming/"
+										title="Doming"
+										>Doming</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/druk-uv/"
+										title="Druk UV"
+										>Druk UV</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/etykiety-naklejki/"
+										title="Etykiety-naklejki"
+										>Etykiety-naklejki</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/grawerowanie/"
+										title="Grawerowanie"
+										>Grawerowanie</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/haft-komputerowy/"
+										title="Haft komputerowy"
+										>Haft komputerowy</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/kalka-ceramiczna/"
+										title="Kalka ceramiczna"
+										>Kalka ceramiczna</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/sitodruk/"
+										title="Sitodruk"
+										>Sitodruk</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/sublimacja/"
+										title="Sublimacja"
+										>Sublimacja</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/tampodruk/"
+										title="Tampodruk"
+										>Tampodruk</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/termotransfer/"
+										title="Termotransfer"
+										>Termotransfer</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/znakowanie/tloczenie/"
+										title="Tłoczenie"
+										>Tłoczenie</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="onecol col-lg-2 col-xs-6">
+							<h4>Dla agencji</h4>
+							<ul class="bottom-menu-ul">
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/do-pobrania/"
+										title="Do pobrania"
+										>Do pobrania</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/negocjator/"
+										title="Negocjator"
+										>Negocjator</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/webapi/"
+										title="Webapi"
+										>Webapi</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/zamow-katalogi/"
+										title="Zamów katalogi"
+										>Zamów katalogi</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/newsletter/"
+										title="Newsletter"
+										>Newsletter</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/warunki-wspolpracy/"
+										title="Warunki współpracy"
+										>Warunki współpracy</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.easygifts.com.pl/dla-agencji/polityka-prywatnosci/"
+										title="Polityka prywatności"
+										>Polityka prywatności</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-newsletter">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div id="footer-newsletter" class="row">
+									<div class="title col-xs-12">
+										<h5>Bądź na bieżąco!</h5>
+									</div>
+									<div class="col-xs-12">
+										Aby otrzymywać aktualizacje i oferty specjalne, dołącz do
+										naszej listy mailingowej.
+									</div>
+									<div class="col-xs-12 newsletter">
+										<form
+											class="clearfix row"
+											action="/newsletter.php?lang=pl"
+											method="post"
+										>
+											<div class="col-lg-4 col-lg-offset-4 col-xs-12">
+												<input
+													type="text"
+													name="email"
+													maxlength="64"
+													placeholder="Adres e-mail *"
+													class="email"
+												/>
+												<input
+													type="text"
+													name="email2"
+													maxlength="64"
+													placeholder="Adres e-mail *"
+													class="newsletter-email"
+												/>
+												<input
+													type="text"
+													name="nip"
+													maxlength="16"
+													placeholder="NIP *"
+													class="newsletter-nip"
+												/>
+												<input type="hidden" name="newsletter-send" value="1" />
+												<input
+													type="submit"
+													class="btn btn-primary newsletter-send"
+													value="Wyślij"
+												/>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright text-center">
+					<p>
+						All rights reserved. Copyright by PCM Sp. z o.o. EASY GIFTS Sp.k.
+						2016 - 2023.
+					</p>
+					<p>
+						Realizacja
+						<a class="contip" href="https://contip.net" title="Contip.net"></a>
+					</p>
+				</div>
+			</section>
+		</footer>
+		<div id="toTop">Back to Top</div>
+		<div id="overlay" class="modal-backdrop fade hidden"></div>
+		<script src="/js/easygifts_libraries.min.js"></script>
+		<script src="/js/easygifts_scripts.js"></script>
+		<script src="/js/bootbox.min.js"></script>
+		<script src="/js/profile/main.js"></script>
+		<script src="/js/profile/adresses.js"></script>
+	</body>
 </html>

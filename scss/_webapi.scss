@@ -1,0 +1,122 @@
+.profileContainer {
+	.data {
+		.data_wrapper_webapi {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 23px;
+			.marketing_item1 {
+				width: 388px;
+				height: 393px;
+				flex-shrink: 0;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				background: var(--biay, #fff);
+				margin: 23px 17px 0 17px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				padding: 0 25px 0 37px;
+				.top,
+				.mid,
+				.bottom {
+					color: var(--Fiolet---kolor, #34224f);
+					font-family: Roboto;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%;
+					.bold {
+						color: var(--Fiolet---kolor, #34224f);
+						font-family: Roboto;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 140%;
+					}
+					.pink {
+						color: var(--roz, #e6007e);
+						font-family: Roboto;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 140%;
+						text-decoration-line: underline;
+					}
+				}
+			}
+			.marketing_item2 {
+				width: 362px;
+				height: 393px;
+				flex-shrink: 0;
+				border-radius: 10px;
+				border: 1px solid #dfdfdf;
+				background: var(--biay, #fff);
+				margin: 23px 39px 0 17px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				padding: 0 25px 0 37px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.profileContainer {
+		.data {
+			.data_wrapper_webapi {
+				.marketing_item2 {
+					width: 388px;
+					height: 393px;
+					flex-shrink: 0;
+					border-radius: 10px;
+					border: 1px solid #dfdfdf;
+					background: var(--biay, #fff);
+					margin: 23px 39px 0 17px;
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					padding: 0 25px 0 37px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profileContainer {
+		.data {
+			.data_wrapper_webapi {
+				padding: 0 20px;
+				.marketing_item1 {
+					font-size: 14px;
+					max-width: 95%;
+					width: 388px;
+					height: auto;
+					padding: 20px 20px 20px 20px;
+					margin: 0;
+					margin-top: 25px;
+					.mid,
+					.bottom {
+						margin: 0;
+						margin-top: 25px;
+					}
+				}
+				.marketing_item2 {
+					max-width: 95%;
+					width: auto;
+					height: auto;
+					margin: 0;
+					margin-top: 25px;
+					img {
+						width: auto;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}
